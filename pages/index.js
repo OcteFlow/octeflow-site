@@ -19,15 +19,26 @@ export default function OcteFlowSite() {
       
       {/* HERO */}
       <section style={styles.hero}>
-        <h1 style={styles.title}>Infraestructura tecnológica que nunca falla</h1>
-        <p style={styles.subtitle}>
-          Redes, WiFi y seguridad diseñadas para empresas que no pueden detenerse
-        </p>
+        <h1 style={styles.title}>
+Tu empresa no puede detenerse. Tu red tampoco.
+</h1>
 
-        <div style={styles.buttons}>
-          <a href="#contacto" style={styles.primaryBtn}>Solicitar diagnóstico</a>
-          <a href="#servicios" style={styles.secondaryBtn}>Ver soluciones</a>
-        </div>
+<p style={styles.subtitle}>
+En OcteFlow diseñamos infraestructura tecnológica estable, segura y lista para crecer contigo.
+</p>
+
+<div style={styles.buttons}>
+  <a href="#contacto" style={styles.primaryBtn}>
+    Diagnóstico gratuito
+  </a>
+  <a href="#servicios" style={styles.secondaryBtn}>
+    Ver soluciones
+  </a>
+</div>
+
+<p style={{ marginTop: 20, opacity: 0.6 }}>
++ Empresas ya operando sin interrupciones
+</p>
       </section>
 
       {/* PROBLEMA / SOLUCIÓN */}
