@@ -13,45 +13,28 @@ export default function Home() {
 
       {/* HEADER */}
       <header className="header">
-        <div className="container">
-          
-          {/* LOGO */}
-          <img src="/logo.svg" alt="logo" className="logo" />
+  <div className="container nav">
 
-          {/* NAV DESKTOP */}
-          <nav className="nav">
-            <a href="#servicios">Servicios</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#contacto">Contacto</a>
-          </nav>
+    {/* LOGO */}
+    <img src="/logo.svg" alt="logo" className="logo" />
 
-          {/* CTA */}
-          <a 
-            href="https://wa.me/5214421396305" 
-            target="_blank" 
-            className="cta"
-          >
-            Contactar
-          </a>
+    {/* BOTÓN HAMBURGUESA */}
+    <button 
+      className="menu-btn"
+      onClick={() => setMenuOpen(!menuOpen)}
+    >
+      ☰
+    </button>
 
-          {/* HAMBURGUESA */}
-          <div 
-            className={`hamburger ${menuOpen ? "active" : ""}`}
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
+    {/* MENÚ */}
+    <nav className={`menu ${menuOpen ? "active" : ""}`}>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
 
-        {/* MENU MOBILE */}
-        <div className={`mobileMenu ${menuOpen ? "show" : ""}`}>
-          <a href="#servicios" onClick={() => setMenuOpen(false)}>Servicios</a>
-          <a href="#nosotros" onClick={() => setMenuOpen(false)}>Nosotros</a>
-          <a href="#contacto" onClick={() => setMenuOpen(false)}>Contacto</a>
-        </div>
-      </header>
+  </div>
+</header>
 
       {/* HERO */}
       <div style={{textAlign:"center", padding:"80px 20px"}}>
