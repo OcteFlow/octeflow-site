@@ -6,17 +6,17 @@ export default function Home() {
 
   const slides = [
   {
-    title: "Conectividad inteligente para tu empresa",
+    title: "Conectividad Inteligente para tu Empresa",
     subtitle: "Redes, WiFi y soluciones empresariales",
     image: "/banner1.jpg"
   },
   {
-    title: "Infraestructura tecnológica confiable",
+    title: "Infraestructura Tecnológica Confiable",
     subtitle: "Optimiza tu operación con tecnología de punta",
     image: "/banner2.jpg"
   },
   {
-    title: "Soporte y soluciones a tu medida",
+    title: "Soporte y Soluciones a tu Medida",
     subtitle: "Implementación, mantenimiento y crecimiento",
     image: "/banner3.jpg"
   }
