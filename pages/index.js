@@ -8,30 +8,56 @@ export default function Home() {
     }}>
       
       {/* HEADER */}
+      import { useState, useEffect } from "react";
+
+export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <>
       <header className="header">
-  <div className="container">
-    
-    {/* LOGO */}
-    <img src="/logo.svg" alt="OcteFlow logo" className="logo" />
+        <div className="container">
+          
+          {/* LOGO */}
+          <img src="/logo.svg" alt="logo" className="logo" />
 
-    {/* NAV */}
-    <nav className="nav">
-      <a href="#servicios">Servicios</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+          {/* NAV DESKTOP */}
+          <nav className="nav">
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
 
-    {/* CTA */}
-    <a 
-      href="https://wa.me/5214421396305" 
-      target="_blank" 
-      className="cta"
-    >
-      Contactar
-    </a>
+          {/* CTA */}
+          <a 
+            href="https://wa.me/5214421396305" 
+            target="_blank" 
+            className="cta"
+          >
+            Contactar
+          </a>
 
-  </div>
-</header>
+          {/* HAMBURGUESA */}
+          <div 
+            className={`hamburger ${menuOpen ? "active" : ""}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        {/* MENU MOBILE */}
+        <div className={`mobileMenu ${menuOpen ? "show" : ""}`}>
+          <a href="#servicios" onClick={() => setMenuOpen(false)}>Servicios</a>
+          <a href="#nosotros" onClick={() => setMenuOpen(false)}>Nosotros</a>
+          <a href="#contacto" onClick={() => setMenuOpen(false)}>Contacto</a>
+        </div>
+      </header>
+    </>
+  );
+}
       {/* HERO */}
       <div style={{textAlign:"center", padding:"80px 20px"}}>
         <h1 style={{fontSize:"40px"}}>
