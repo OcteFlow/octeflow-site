@@ -18,10 +18,12 @@ export default function Home() {
   <img 
     src="/logo.png" 
     alt="logo" 
-    style={{height:"60px"}}
+    style={{
+      height: "110px",
+      width: "auto"
+    }}
   />
 </div>
-
         <a href="https://wa.me/5214421396305" target="_blank">
           <button style={{
             background:"#2ea5e4",
