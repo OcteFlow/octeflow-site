@@ -1,252 +1,116 @@
-import { useState } from "react";
+import React from "react";
+import { motion } from "framer-motion";
+import { Phone, Mail, MessageCircle } from "lucide-react";
 
 export default function OcteFlowSite() {
-  const [form, setForm] = useState({
-    nombre: "",
-    empresa: "",
-    problema: "",
-    telefono: "",
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const mensaje = `Hola, soy ${form.nombre} de ${form.empresa}. Necesito ayuda con: ${form.problema}. Mi número es ${form.telefono}`;
-    window.open(`https://wa.me/5214421396305?text=${encodeURIComponent(mensaje)}`, "_blank");
-  };
-
   return (
-    <div style={styles.container}>
-      
-      {/* HERO */}
-      <section style={styles.hero}>
-        <h1 style={styles.title}>
-Tu empresa no puede detenerse. Tu red tampoco.
-</h1>
-
-<p style={styles.subtitle}>
-En OcteFlow diseñamos infraestructura tecnológica estable, segura y lista para crecer contigo.
-</p>
-
-<div style={styles.buttons}>
-  <a href="#contacto" style={styles.primaryBtn}>
-    Diagnóstico gratuito
-  </a>
-  <a href="#servicios" style={styles.secondaryBtn}>
-    Ver soluciones
-  </a>
-</div>
-
-<p style={{ marginTop: 20, opacity: 0.6 }}>
-+ Empresas ya operando sin interrupciones
-</p>
-      </section>
-
-      {/* PROBLEMA / SOLUCIÓN */}
-      <section style={styles.section}>
-        <h2 style={styles.sectionTitle}>Lo que resolvemos</h2>
-
-        <div style={styles.grid}>
-          <div style={styles.card}>❌ Caídas de red</div>
-          <div style={styles.card}>❌ WiFi inestable</div>
-          <div style={styles.card}>❌ CCTV poco confiable</div>
-          <div style={styles.card}>❌ Soporte lento</div>
+    <div className="min-h-screen bg-[#050a30] text-white font-sans">
+      {/* HEADER */}
+      <header className="flex items-center justify-between p-6 max-w-7xl mx-auto">
+        <div className="flex items-center gap-3">
+          {/* CAMBIA ESTE SRC POR TU LOGO */}
+          <img src="/logo.png" alt="OcteFlow logo" className="h-10" />
+          <span className="text-xl font-semibold">OcteFlow</span>
         </div>
+        <a
+          href="https://wa.me/5214421396305"
+          target="_blank"
+          className="bg-[#2ea5e4] px-4 py-2 rounded-xl font-medium hover:opacity-90"
+        >
+          Contactar
+        </a>
+      </header>
 
-        <h2 style={styles.sectionTitle}>Lo que obtienes</h2>
+      {/* HERO */}
+      <section className="text-center py-24 px-6">
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl md:text-6xl font-bold mb-6"
+        >
+          Conectividad Inteligente para tu Empresa
+        </motion.h1>
 
-        <div style={styles.grid}>
-          <div style={styles.cardHighlight}>✅ Conectividad 24/7</div>
-          <div style={styles.cardHighlight}>✅ Seguridad confiable</div>
-          <div style={styles.cardHighlight}>✅ Respuesta inmediata</div>
-          <div style={styles.cardHighlight}>✅ Escalabilidad real</div>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          className="text-lg text-gray-300 max-w-2xl mx-auto"
+        >
+          Redes, WiFi, CCTV y soluciones tecnológicas diseñadas para brindar
+          estabilidad, seguridad y crecimiento.
+        </motion.p>
+
+        <div className="mt-8 flex justify-center gap-4 flex-wrap">
+          <a
+            href="https://wa.me/5214421396305"
+            target="_blank"
+            className="bg-[#2ea5e4] px-6 py-3 rounded-xl font-medium"
+          >
+            WhatsApp
+          </a>
+          <a
+            href="tel:+5214421396305"
+            className="border border-[#2ea5e4] px-6 py-3 rounded-xl"
+          >
+            Llamar
+          </a>
         </div>
       </section>
 
       {/* SERVICIOS */}
-      <section id="servicios" style={styles.sectionDark}>
-        <h2 style={styles.sectionTitle}>Soluciones OcteFlow</h2>
-
-        <div style={styles.grid}>
-          <div style={styles.serviceCard}>
-            <h3>OcteFlow Connect</h3>
-            <p>Redes empresariales y WiFi profesional</p>
-          </div>
-
-          <div style={styles.serviceCard}>
-            <h3>OcteFlow Secure</h3>
-            <p>CCTV, monitoreo y control de accesos</p>
-          </div>
-
-          <div style={styles.serviceCard}>
-            <h3>OcteFlow Care</h3>
-            <p>Soporte continuo y mantenimiento</p>
-          </div>
-        </div>
-      </section>
-
-      {/* PLANES */}
-      <section style={styles.section}>
-        <h2 style={styles.sectionTitle}>Planes</h2>
-
-        <div style={styles.grid}>
-          <div style={styles.plan}>
-            <h3>Básico</h3>
-            <p>Instalación + configuración</p>
-          </div>
-
-          <div style={styles.plan}>
-            <h3>Pro</h3>
-            <p>Red + seguridad + soporte</p>
-          </div>
-
-          <div style={styles.plan}>
-            <h3>Enterprise</h3>
-            <p>Infraestructura completa + SLA</p>
-          </div>
-        </div>
+      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-8">
+        {[
+          "Redes Empresariales",
+          "CCTV y Seguridad",
+          "WiFi Profesional",
+        ].map((service, i) => (
+          <motion.div
+            key={i}
+            whileHover={{ scale: 1.05 }}
+            className="bg-white/5 p-6 rounded-2xl backdrop-blur"
+          >
+            <h3 className="text-xl font-semibold mb-3">{service}</h3>
+            <p className="text-gray-300">
+              Soluciones modernas y confiables adaptadas a tus necesidades.
+            </p>
+          </motion.div>
+        ))}
       </section>
 
       {/* CONTACTO */}
-      <section id="contacto" style={styles.sectionDark}>
-        <h2 style={styles.sectionTitle}>Solicita un diagnóstico gratuito</h2>
+      <section className="text-center py-20 px-6">
+        <h2 className="text-3xl font-bold mb-6">Contáctanos</h2>
+        <div className="flex justify-center gap-6 flex-wrap">
+          <a
+            href="https://wa.me/5214421396305"
+            target="_blank"
+            className="flex items-center gap-2 bg-[#2ea5e4] px-5 py-3 rounded-xl"
+          >
+            <MessageCircle size={18} /> WhatsApp
+          </a>
 
-        <form onSubmit={handleSubmit} style={styles.form}>
-          <input
-            placeholder="Nombre"
-            style={styles.input}
-            onChange={(e) => setForm({ ...form, nombre: e.target.value })}
-          />
-          <input
-            placeholder="Empresa"
-            style={styles.input}
-            onChange={(e) => setForm({ ...form, empresa: e.target.value })}
-          />
-          <input
-            placeholder="Problema"
-            style={styles.input}
-            onChange={(e) => setForm({ ...form, problema: e.target.value })}
-          />
-          <input
-            placeholder="WhatsApp"
-            style={styles.input}
-            onChange={(e) => setForm({ ...form, telefono: e.target.value })}
-          />
+          <a
+            href="mailto:contacto@octeflow.com"
+            className="flex items-center gap-2 border border-white/20 px-5 py-3 rounded-xl"
+          >
+            <Mail size={18} /> Correo
+          </a>
 
-          <button type="submit" style={styles.primaryBtn}>
-            Contactar por WhatsApp
-          </button>
-        </form>
+          <a
+            href="tel:+5214421396305"
+            className="flex items-center gap-2 border border-white/20 px-5 py-3 rounded-xl"
+          >
+            <Phone size={18} /> Llamar
+          </a>
+        </div>
       </section>
 
-      {/* BOTÓN FLOTANTE */}
-      <a
-        href="https://wa.me/5214421396305"
-        target="_blank"
-        style={styles.whatsapp}
-      >
-        💬
-      </a>
+      {/* FOOTER */}
+      <footer className="text-center text-gray-400 py-6 text-sm">
+        © {new Date().getFullYear()} OcteFlow. Todos los derechos reservados.
+      </footer>
     </div>
   );
 }
-
-const styles = {
-  container: {
-    fontFamily: "Arial, sans-serif",
-    background: "#0d0d0d",
-    color: "white",
-  },
-  hero: {
-    textAlign: "center",
-    padding: "100px 20px",
-  },
-  title: {
-    fontSize: "42px",
-    fontWeight: "bold",
-  },
-  subtitle: {
-    marginTop: "20px",
-    fontSize: "18px",
-    opacity: 0.8,
-  },
-  buttons: {
-    marginTop: "30px",
-  },
-  primaryBtn: {
-    background: "#7b1e3a",
-    padding: "12px 24px",
-    margin: "10px",
-    color: "white",
-    textDecoration: "none",
-    borderRadius: "8px",
-  },
-  secondaryBtn: {
-    border: "1px solid white",
-    padding: "12px 24px",
-    margin: "10px",
-    color: "white",
-    textDecoration: "none",
-    borderRadius: "8px",
-  },
-  section: {
-    padding: "60px 20px",
-    textAlign: "center",
-  },
-  sectionDark: {
-    padding: "60px 20px",
-    background: "#1a1a1a",
-    textAlign: "center",
-  },
-  sectionTitle: {
-    fontSize: "28px",
-    marginBottom: "30px",
-  },
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-    gap: "20px",
-  },
-  card: {
-    padding: "20px",
-    background: "#222",
-    borderRadius: "10px",
-  },
-  cardHighlight: {
-    padding: "20px",
-    background: "#7b1e3a",
-    borderRadius: "10px",
-  },
-  serviceCard: {
-    padding: "20px",
-    background: "#222",
-    borderRadius: "10px",
-  },
-  plan: {
-    padding: "20px",
-    background: "#222",
-    borderRadius: "10px",
-  },
-  form: {
-    maxWidth: "400px",
-    margin: "auto",
-    display: "flex",
-    flexDirection: "column",
-  },
-  input: {
-    margin: "10px 0",
-    padding: "12px",
-    borderRadius: "6px",
-    border: "none",
-  },
-  whatsapp: {
-    position: "fixed",
-    bottom: "20px",
-    right: "20px",
-    background: "#25D366",
-    padding: "15px",
-    borderRadius: "50%",
-    textDecoration: "none",
-    color: "white",
-    fontSize: "20px",
-  },
-};
