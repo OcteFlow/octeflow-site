@@ -19,7 +19,7 @@ export default function Home() {
           <h2>OcteFlow</h2>
         </div>
 
-        <a href="https://wa.me/521XXXXXXXXXX" target="_blank">
+        <a href="https://wa.me/5214421396305" target="_blank">
           <button style={{
             background:"#2ea5e4",
             border:"none",
@@ -43,7 +43,7 @@ export default function Home() {
         </p>
 
         <div style={{marginTop:"30px"}}>
-          <a href="https://wa.me/521XXXXXXXXXX" target="_blank">
+          <a href="https://wa.me/5214421396305" target="_blank">
             <button style={{
               background:"#2ea5e4",
               border:"none",
@@ -56,7 +56,7 @@ export default function Home() {
             </button>
           </a>
 
-          <a href="tel:+521XXXXXXXXXX">
+          <a href="tel:+5214421396305">
             <button style={{
               border:"1px solid #2ea5e4",
               padding:"12px 25px",
@@ -98,9 +98,9 @@ export default function Home() {
         <h2>Contáctanos</h2>
 
         <div style={{marginTop:"20px"}}>
-          <a href="https://wa.me/521XXXXXXXXXX" target="_blank">WhatsApp</a> |{" "}
+          <a href="https://wa.me/5214421396305" target="_blank">WhatsApp</a> |{" "}
           <a href="mailto:contacto@octeflow.com">Correo</a> |{" "}
-          <a href="tel:+521XXXXXXXXXX">Llamar</a>
+          <a href="tel:+5214421396305">Llamar</a>
         </div>
       </div>
 
