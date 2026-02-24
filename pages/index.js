@@ -13,7 +13,7 @@ export default function OcteFlowSite() {
           <span className="text-xl font-semibold">OcteFlow</span>
         </div>
         <a
-          href="https://wa.me/5214421396305"
+          href="https://wa.me/521XXXXXXXXXX"
           target="_blank"
           className="bg-[#2ea5e4] px-4 py-2 rounded-xl font-medium hover:opacity-90"
         >
@@ -44,14 +44,14 @@ export default function OcteFlowSite() {
 
         <div className="mt-8 flex justify-center gap-4 flex-wrap">
           <a
-            href="https://wa.me/5214421396305"
+            href="https://wa.me/521XXXXXXXXXX"
             target="_blank"
             className="bg-[#2ea5e4] px-6 py-3 rounded-xl font-medium"
           >
             WhatsApp
           </a>
           <a
-            href="tel:+5214421396305"
+            href="tel:+521XXXXXXXXXX"
             className="border border-[#2ea5e4] px-6 py-3 rounded-xl"
           >
             Llamar
@@ -84,7 +84,7 @@ export default function OcteFlowSite() {
         <h2 className="text-3xl font-bold mb-6">Contáctanos</h2>
         <div className="flex justify-center gap-6 flex-wrap">
           <a
-            href="https://wa.me/5214421396305"
+            href="https://wa.me/521XXXXXXXXXX"
             target="_blank"
             className="flex items-center gap-2 bg-[#2ea5e4] px-5 py-3 rounded-xl"
           >
@@ -99,7 +99,7 @@ export default function OcteFlowSite() {
           </a>
 
           <a
-            href="tel:+5214421396305"
+            href="tel:+521XXXXXXXXXX"
             className="flex items-center gap-2 border border-white/20 px-5 py-3 rounded-xl"
           >
             <Phone size={18} /> Llamar
