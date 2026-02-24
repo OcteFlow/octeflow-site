@@ -1,9 +1,37 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const slides = [
+  {
+    title: "Conectividad inteligente para tu empresa",
+    subtitle: "Redes, WiFi y soluciones empresariales",
+    image: "/banner1.jpg"
+  },
+  {
+    title: "Infraestructura tecnológica confiable",
+    subtitle: "Optimiza tu operación con tecnología de punta",
+    image: "/banner2.jpg"
+  },
+  {
+    title: "Soporte y soluciones a tu medida",
+    subtitle: "Implementación, mantenimiento y crecimiento",
+    image: "/banner3.jpg"
+  }
+];
+
+  const [current, setCurrent] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrent((prev) => (prev + 1) % slides.length);
+  }, 5000); // cambia cada 5 segundos
+
+  return () => clearInterval(interval);
+}, []);
+  
   return (
   <>
     <Head>
@@ -50,41 +78,38 @@ export default function Home() {
 </header>
 
       {/* HERO */}
-      <div style={{textAlign:"center", padding:"80px 20px"}}>
-        <h1 style={{fontSize:"40px"}}>
-          Conectividad Inteligente para tu Empresa
-        </h1>
-        <p style={{color:"#ccc", maxWidth:"600px", margin:"20px auto"}}>
-          Redes, WiFi, CCTV y soluciones tecnológicas diseñadas para brindar estabilidad y seguridad.
-        </p>
+      <section className="hero">
+  <div
+    className="hero-bg"
+    style={{
+      backgroundImage: `url(${slides[current].image})`,
+    }}
+  >
+    <div className="overlay">
+      <h1>{slides[current].title}</h1>
+      <p>{slides[current].subtitle}</p>
 
-        <div style={{marginTop:"30px"}}>
-          <a href="https://wa.me/5214421396305" target="_blank" rel="noopener noreferrer">
-            <button className="btn" style={{
-  background:"#2ea5e4",
-  border:"none",
-  padding:"12px 25px",
-  borderRadius:"10px",
-  color:"white",
-  marginRight:"10px"
-}}>
-              WhatsApp
-            </button>
-          </a>
-
-          <a href="tel:+5214421396305">
-            <button className="btn" style={{
-  border:"1px solid #2ea5e4",
-  padding:"12px 25px",
-  borderRadius:"10px",
-  color:"white",
-  background:"transparent"
-}}>
-              Llamar
-            </button>
-          </a>
-        </div>
+      <div className="hero-buttons">
+        <a href="https://wa.me/524421396305" className="btn">
+          WhatsApp
+        </a>
+        <a href="tel:+524421396305" className="btn outline">
+          Llamar
+        </a>
       </div>
+
+      <div className="dots">
+        {slides.map((_, i) => (
+          <span
+            key={i}
+            className={i === current ? "dot active" : "dot"}
+            onClick={() => setCurrent(i)}
+          ></span>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* SERVICIOS */}
       <div id="servicios" style={{
