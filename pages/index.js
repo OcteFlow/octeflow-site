@@ -1,116 +1,113 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { Phone, Mail, MessageCircle } from "lucide-react";
-
-export default function OcteFlowSite() {
+export default function Home() {
   return (
-    <div className="min-h-screen bg-[#050a30] text-white font-sans">
+    <div style={{
+      minHeight: "100vh",
+      background: "#050a30",
+      color: "white",
+      fontFamily: "Arial, sans-serif"
+    }}>
+      
       {/* HEADER */}
-      <header className="flex items-center justify-between p-6 max-w-7xl mx-auto">
-        <div className="flex items-center gap-3">
-          {/* CAMBIA ESTE SRC POR TU LOGO */}
-          <img src="/logo.png" alt="OcteFlow logo" className="h-10" />
-          <span className="text-xl font-semibold">OcteFlow</span>
+      <div style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "20px 40px"
+      }}>
+        <div style={{display:"flex", alignItems:"center", gap:"10px"}}>
+          <img src="/logo.png" alt="logo" style={{height:"40px"}} />
+          <h2>OcteFlow</h2>
         </div>
-        <a
-          href="https://wa.me/521XXXXXXXXXX"
-          target="_blank"
-          className="bg-[#2ea5e4] px-4 py-2 rounded-xl font-medium hover:opacity-90"
-        >
-          Contactar
+
+        <a href="https://wa.me/521XXXXXXXXXX" target="_blank">
+          <button style={{
+            background:"#2ea5e4",
+            border:"none",
+            padding:"10px 20px",
+            borderRadius:"10px",
+            color:"white",
+            cursor:"pointer"
+          }}>
+            Contactar
+          </button>
         </a>
-      </header>
+      </div>
 
       {/* HERO */}
-      <section className="text-center py-24 px-6">
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-bold mb-6"
-        >
+      <div style={{textAlign:"center", padding:"80px 20px"}}>
+        <h1 style={{fontSize:"40px"}}>
           Conectividad Inteligente para tu Empresa
-        </motion.h1>
+        </h1>
+        <p style={{color:"#ccc", maxWidth:"600px", margin:"20px auto"}}>
+          Redes, WiFi, CCTV y soluciones tecnológicas diseñadas para brindar estabilidad y seguridad.
+        </p>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-          className="text-lg text-gray-300 max-w-2xl mx-auto"
-        >
-          Redes, WiFi, CCTV y soluciones tecnológicas diseñadas para brindar
-          estabilidad, seguridad y crecimiento.
-        </motion.p>
-
-        <div className="mt-8 flex justify-center gap-4 flex-wrap">
-          <a
-            href="https://wa.me/521XXXXXXXXXX"
-            target="_blank"
-            className="bg-[#2ea5e4] px-6 py-3 rounded-xl font-medium"
-          >
-            WhatsApp
+        <div style={{marginTop:"30px"}}>
+          <a href="https://wa.me/521XXXXXXXXXX" target="_blank">
+            <button style={{
+              background:"#2ea5e4",
+              border:"none",
+              padding:"12px 25px",
+              borderRadius:"10px",
+              color:"white",
+              marginRight:"10px"
+            }}>
+              WhatsApp
+            </button>
           </a>
-          <a
-            href="tel:+521XXXXXXXXXX"
-            className="border border-[#2ea5e4] px-6 py-3 rounded-xl"
-          >
-            Llamar
+
+          <a href="tel:+521XXXXXXXXXX">
+            <button style={{
+              border:"1px solid #2ea5e4",
+              padding:"12px 25px",
+              borderRadius:"10px",
+              color:"white",
+              background:"transparent"
+            }}>
+              Llamar
+            </button>
           </a>
         </div>
-      </section>
+      </div>
 
       {/* SERVICIOS */}
-      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-8">
-        {[
-          "Redes Empresariales",
-          "CCTV y Seguridad",
-          "WiFi Profesional",
-        ].map((service, i) => (
-          <motion.div
-            key={i}
-            whileHover={{ scale: 1.05 }}
-            className="bg-white/5 p-6 rounded-2xl backdrop-blur"
-          >
-            <h3 className="text-xl font-semibold mb-3">{service}</h3>
-            <p className="text-gray-300">
-              Soluciones modernas y confiables adaptadas a tus necesidades.
+      <div style={{
+        display:"flex",
+        justifyContent:"center",
+        gap:"20px",
+        flexWrap:"wrap",
+        padding:"40px"
+      }}>
+        {["Redes", "CCTV", "WiFi"].map((s, i) => (
+          <div key={i} style={{
+            background:"rgba(255,255,255,0.05)",
+            padding:"20px",
+            borderRadius:"15px",
+            width:"250px"
+          }}>
+            <h3>{s}</h3>
+            <p style={{color:"#ccc"}}>
+              Soluciones confiables y modernas.
             </p>
-          </motion.div>
+          </div>
         ))}
-      </section>
+      </div>
 
       {/* CONTACTO */}
-      <section className="text-center py-20 px-6">
-        <h2 className="text-3xl font-bold mb-6">Contáctanos</h2>
-        <div className="flex justify-center gap-6 flex-wrap">
-          <a
-            href="https://wa.me/521XXXXXXXXXX"
-            target="_blank"
-            className="flex items-center gap-2 bg-[#2ea5e4] px-5 py-3 rounded-xl"
-          >
-            <MessageCircle size={18} /> WhatsApp
-          </a>
+      <div style={{textAlign:"center", padding:"60px 20px"}}>
+        <h2>Contáctanos</h2>
 
-          <a
-            href="mailto:contacto@octeflow.com"
-            className="flex items-center gap-2 border border-white/20 px-5 py-3 rounded-xl"
-          >
-            <Mail size={18} /> Correo
-          </a>
-
-          <a
-            href="tel:+521XXXXXXXXXX"
-            className="flex items-center gap-2 border border-white/20 px-5 py-3 rounded-xl"
-          >
-            <Phone size={18} /> Llamar
-          </a>
+        <div style={{marginTop:"20px"}}>
+          <a href="https://wa.me/521XXXXXXXXXX" target="_blank">WhatsApp</a> |{" "}
+          <a href="mailto:contacto@octeflow.com">Correo</a> |{" "}
+          <a href="tel:+521XXXXXXXXXX">Llamar</a>
         </div>
-      </section>
+      </div>
 
       {/* FOOTER */}
-      <footer className="text-center text-gray-400 py-6 text-sm">
-        © {new Date().getFullYear()} OcteFlow. Todos los derechos reservados.
-      </footer>
+      <div style={{textAlign:"center", padding:"20px", color:"#aaa"}}>
+        © 2026 OcteFlow
+      </div>
     </div>
   );
 }
