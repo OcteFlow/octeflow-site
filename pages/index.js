@@ -8,36 +8,30 @@ export default function Home() {
     }}>
       
       {/* HEADER */}
-      <div style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "20px 40px"
-      }}>
-        <div style={{display:"flex", alignItems:"center"}}>
-  <img 
-    src="/logo.png" 
-    alt="logo" 
-    style={{
-      height: "110px",
-      width: "auto"
-    }}
-  />
-</div>
-        <a href="https://wa.me/5214421396305" target="_blank">
-          <button style={{
-            background:"#2ea5e4",
-            border:"none",
-            padding:"10px 20px",
-            borderRadius:"10px",
-            color:"white",
-            cursor:"pointer"
-          }}>
-            Contactar
-          </button>
-        </a>
-      </div>
+      <header className="header">
+  <div className="container">
+    
+    {/* LOGO */}
+    <img src="/logo.svg" alt="OcteFlow logo" className="logo" />
 
+    {/* NAV */}
+    <nav className="nav">
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    {/* CTA */}
+    <a 
+      href="https://wa.me/5214421396305" 
+      target="_blank" 
+      className="cta"
+    >
+      Contactar
+    </a>
+
+  </div>
+</header>
       {/* HERO */}
       <div style={{textAlign:"center", padding:"80px 20px"}}>
         <h1 style={{fontSize:"40px"}}>
