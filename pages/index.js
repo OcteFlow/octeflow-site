@@ -27,7 +27,7 @@ export default function Home() {
 useEffect(() => {
   const interval = setInterval(() => {
     setCurrent((prev) => (prev + 1) % slides.length);
-  }, 5000); // cambia cada 5 segundos
+  }, 6000); // cambia cada 6 segundos
 
   return () => clearInterval(interval);
 }, []);
