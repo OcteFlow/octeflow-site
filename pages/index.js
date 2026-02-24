@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div style={{
       minHeight: "100vh",
@@ -6,15 +10,8 @@ export default function Home() {
       color: "white",
       fontFamily: "Arial, sans-serif"
     }}>
-      
+
       {/* HEADER */}
-      import { useState, useEffect } from "react";
-
-export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  return (
-    <>
       <header className="header">
         <div className="container">
           
@@ -55,9 +52,7 @@ export default function Home() {
           <a href="#contacto" onClick={() => setMenuOpen(false)}>Contacto</a>
         </div>
       </header>
-    </>
-  );
-}
+
       {/* HERO */}
       <div style={{textAlign:"center", padding:"80px 20px"}}>
         <h1 style={{fontSize:"40px"}}>
@@ -96,7 +91,7 @@ export default function Home() {
       </div>
 
       {/* SERVICIOS */}
-      <div style={{
+      <div id="servicios" style={{
         display:"flex",
         justifyContent:"center",
         gap:"20px",
@@ -119,7 +114,7 @@ export default function Home() {
       </div>
 
       {/* CONTACTO */}
-      <div style={{textAlign:"center", padding:"60px 20px"}}>
+      <div id="contacto" style={{textAlign:"center", padding:"60px 20px"}}>
         <h2>Contáctanos</h2>
 
         <div style={{marginTop:"20px"}}>
@@ -133,6 +128,7 @@ export default function Home() {
       <div style={{textAlign:"center", padding:"20px", color:"#aaa"}}>
         © 2026 OcteFlow
       </div>
+
     </div>
   );
 }
