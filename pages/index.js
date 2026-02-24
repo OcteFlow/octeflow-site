@@ -1,9 +1,20 @@
 import { useState } from "react";
+import Head from "next/head";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    <Head>
+  <title>OcteFlow - Soluciones en Redes</title>
+    <meta name="description" content="Soluciones en redes, WiFi, CCTV y seguridad para empresas y hogares. Instalación profesional y soporte confiable." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta property="og:title" content="OcteFlow" />
+<meta property="og:description" content="Soluciones en redes y seguridad profesional" />
+<meta property="og:image" content="/favicon.png" />
+  <link rel="icon" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
+</Head>
     <div style={{
       minHeight: "100vh",
       background: "#050a30",
