@@ -20,11 +20,11 @@ export default function Home() {
 
     {/* BOTÓN HAMBURGUESA */}
     <button 
-      className="menu-btn"
-      onClick={() => setMenuOpen(!menuOpen)}
-    >
-      ☰
-    </button>
+  className="menu-btn"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  {menuOpen ? "✕" : "☰"}
+</button>
 
     {/* MENÚ */}
     <nav className={`menu ${menuOpen ? "active" : ""}`}>
