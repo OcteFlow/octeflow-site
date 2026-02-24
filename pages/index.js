@@ -47,26 +47,26 @@ export default function Home() {
 
         <div style={{marginTop:"30px"}}>
           <a href="https://wa.me/5214421396305" target="_blank">
-            <button style={{
-              background:"#2ea5e4",
-              border:"none",
-              padding:"12px 25px",
-              borderRadius:"10px",
-              color:"white",
-              marginRight:"10px"
-            }}>
+            <button className="btn" style={{
+  background:"#2ea5e4",
+  border:"none",
+  padding:"12px 25px",
+  borderRadius:"10px",
+  color:"white",
+  marginRight:"10px"
+}}>
               WhatsApp
             </button>
           </a>
 
           <a href="tel:+5214421396305">
-            <button style={{
-              border:"1px solid #2ea5e4",
-              padding:"12px 25px",
-              borderRadius:"10px",
-              color:"white",
-              background:"transparent"
-            }}>
+            <button className="btn" style={{
+  border:"1px solid #2ea5e4",
+  padding:"12px 25px",
+  borderRadius:"10px",
+  color:"white",
+  background:"transparent"
+}}>
               Llamar
             </button>
           </a>
