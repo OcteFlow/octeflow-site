@@ -14,10 +14,13 @@ export default function Home() {
         alignItems: "center",
         padding: "20px 40px"
       }}>
-        <div style={{display:"flex", alignItems:"center", gap:"10px"}}>
-          <img src="/logo.png" alt="logo" style={{height:"40px"}} />
-          <h2>OcteFlow</h2>
-        </div>
+        <div style={{display:"flex", alignItems:"center"}}>
+  <img 
+    src="/logo.png" 
+    alt="logo" 
+    style={{height:"60px"}}
+  />
+</div>
 
         <a href="https://wa.me/5214421396305" target="_blank">
           <button style={{
