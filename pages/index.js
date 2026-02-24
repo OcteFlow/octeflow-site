@@ -5,16 +5,18 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+  <>
     <Head>
-  <title>OcteFlow - Soluciones en Redes</title>
-    <meta name="description" content="Soluciones en redes, WiFi, CCTV y seguridad para empresas y hogares. Instalación profesional y soporte confiable." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta property="og:title" content="OcteFlow" />
-<meta property="og:description" content="Soluciones en redes y seguridad profesional" />
-<meta property="og:image" content="/favicon.png" />
-  <link rel="icon" href="/favicon.png" />
-  <link rel="apple-touch-icon" href="/favicon.png" />
-</Head>
+      <title>OcteFlow - Soluciones en Redes</title>
+      <meta name="description" content="Soluciones en redes, WiFi, CCTV y seguridad para empresas y hogares. Instalación profesional y soporte confiable." />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:title" content="OcteFlow" />
+      <meta property="og:description" content="Soluciones en redes y seguridad profesional" />
+      <meta property="og:image" content="/favicon.png" />
+      <link rel="icon" href="/favicon.png" />
+      <link rel="apple-touch-icon" href="/favicon.png" />
+    </Head>
+
     <div style={{
       minHeight: "100vh",
       background: "#050a30",
@@ -57,7 +59,7 @@ export default function Home() {
         </p>
 
         <div style={{marginTop:"30px"}}>
-          <a href="https://wa.me/5214421396305" target="_blank">
+          <a href="https://wa.me/5214421396305" target="_blank" rel="noopener noreferrer">
             <button className="btn" style={{
   background:"#2ea5e4",
   border:"none",
@@ -112,7 +114,7 @@ export default function Home() {
         <h2>Contáctanos</h2>
 
         <div style={{marginTop:"20px"}}>
-          <a href="https://wa.me/5214421396305" target="_blank">WhatsApp</a> |{" "}
+          <a href="https://wa.me/5214421396305" target="_blank" rel="noopener noreferrer">WhatsApp</a> |{" "}
           <a href="mailto:contacto@octeflow.com">Correo</a> |{" "}
           <a href="tel:+5214421396305">Llamar</a>
         </div>
