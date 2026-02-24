@@ -146,7 +146,7 @@ a {
 }
 
 .btn {
-  background: #7a1f2b;
+  background: #2ea5e4;
   color: white;
   padding: 12px 22px;
   border-radius: 8px;
@@ -156,7 +156,7 @@ a {
 }
 
 .btn:hover {
-  background: #a83244;
+  background: #0cc0df;
   transform: scale(1.05);
 }
 
@@ -180,7 +180,7 @@ a {
 }
 
 .dot.active {
-  background: #7a1f2b;
+  background: #2ea5e4;
 }
 
 /* Animación */
