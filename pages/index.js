@@ -210,15 +210,16 @@ export default function Home() {
               marginBottom: "20px"
             }}
           >
-            La tecnología debería simplificar tu vida, no complicarla.
+            ¡La tecnología debería simplificar tu vida, no complicarla!
           </h2>
 
           <p
             style={{
-              fontSize: "18px",
+              fontSize: "1  8px",
               color: "#333",
               maxWidth: "700px",
               margin: "0 auto"
+              fontWeight: "700"
             }}
           >
             Nosotros nos encargamos de tu red, para que tú te enfoques en lo que
