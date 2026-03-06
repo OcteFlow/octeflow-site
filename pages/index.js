@@ -102,82 +102,97 @@ export default function Home() {
         </header>
 
         {/* HERO */}
-        <section>
-          <div
+<section>
+  <div
+    style={{
+      height: "500px",
+      backgroundImage: `url(${slides[current].image})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      position: "relative"
+    }}
+  >
+
+    {/* overlay oscuro completo */}
+    <div
+      style={{
+        position: "absolute",
+        top:0,
+        left:0,
+        right:0,
+        bottom:0,
+        background:"rgba(0,0,0,0.55)",
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center",
+        textAlign:"center",
+        padding:"20px"
+      }}
+    >
+
+      <div>
+        <h1 style={{ fontSize: "38px" }}>
+          {slides[current].title}
+        </h1>
+
+        <p style={{ fontSize: "18px", marginTop: "10px" }}>
+          {slides[current].subtitle}
+        </p>
+
+        <div style={{ marginTop: "25px" }}>
+          <a
+            href="https://wa.me/524421396305"
             style={{
-              height: "500px",
-              backgroundImage: `url(${slides[current].image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              textAlign: "center",
-              position: "relative"
+              background: "#2ea5e4",
+              padding: "12px 20px",
+              borderRadius: "6px",
+              marginRight: "10px",
+              textDecoration: "none",
+              color: "white"
             }}
           >
-            <div
+            WhatsApp
+          </a>
+
+          <a
+            href="tel:+524421396305"
+            style={{
+              border: "2px solid white",
+              padding: "12px 20px",
+              borderRadius: "6px",
+              textDecoration: "none",
+              color: "white"
+            }}
+          >
+            Llamar
+          </a>
+        </div>
+
+        {/* dots */}
+        <div style={{ marginTop: "30px" }}>
+          {slides.map((_, i) => (
+            <span
+              key={i}
+              onClick={() => setCurrent(i)}
               style={{
-                background: "rgba(0,0,0,0.55)",
-                padding: "40px",
-                borderRadius: "10px"
+                height: "10px",
+                width: "10px",
+                margin: "5px",
+                display: "inline-block",
+                borderRadius: "50%",
+                background: i === current ? "#2ea5e4" : "#ccc",
+                cursor: "pointer"
               }}
-            >
-              <h1 style={{ fontSize: "38px" }}>{slides[current].title}</h1>
-              <p style={{ fontSize: "18px", marginTop: "10px" }}>
-                {slides[current].subtitle}
-              </p>
+            ></span>
+          ))}
+        </div>
 
-              <div style={{ marginTop: "25px" }}>
-                <a
-                  href="https://wa.me/524421396305"
-                  style={{
-                    background: "#2ea5e4",
-                    padding: "12px 20px",
-                    borderRadius: "6px",
-                    marginRight: "10px",
-                    textDecoration: "none",
-                    color: "white"
-                  }}
-                >
-                  WhatsApp
-                </a>
+      </div>
 
-                <a
-                  href="tel:+524421396305"
-                  style={{
-                    border: "2px solid white",
-                    padding: "12px 20px",
-                    borderRadius: "6px",
-                    textDecoration: "none",
-                    color: "white"
-                  }}
-                >
-                  Llamar
-                </a>
-              </div>
+    </div>
 
-              {/* dots */}
-              <div style={{ marginTop: "30px" }}>
-                {slides.map((_, i) => (
-                  <span
-                    key={i}
-                    onClick={() => setCurrent(i)}
-                    style={{
-                      height: "10px",
-                      width: "10px",
-                      margin: "5px",
-                      display: "inline-block",
-                      borderRadius: "50%",
-                      background: i === current ? "#2ea5e4" : "#ccc",
-                      cursor: "pointer"
-                    }}
-                  ></span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+  </div>
+</section>
 
         {/* MENSAJE PRINCIPAL */}
         <div
