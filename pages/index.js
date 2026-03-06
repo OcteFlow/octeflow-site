@@ -218,7 +218,7 @@ export default function Home() {
               fontSize: "1  8px",
               color: "#333",
               maxWidth: "700px",
-              margin: "0 auto"
+              margin: "0 auto",
               fontWeight: "700"
             }}
           >
