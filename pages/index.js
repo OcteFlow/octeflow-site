@@ -138,7 +138,7 @@ useEffect(() => {
       <div id="contacto" style={{textAlign:"center", padding:"60px 20px"}}>
         <h2>Contáctanos</h2>
 
-        <div style={{marginTop:"20px", color:"#2ea5e4"}}>
+        <div style={{marginTop:"20px", color:"white"}}>
           <a href="https://wa.me/5214421396305" target="_blank" rel="noopener noreferrer">WhatsApp</a> |{" "}
           <a href="mailto:contacto@octeflow.com">Correo</a> |{" "}
           <a href="tel:+5214421396305">Llamar</a>
