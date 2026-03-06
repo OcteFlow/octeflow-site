@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 
 export default function Home() {
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   const slides = [
@@ -37,175 +36,174 @@ export default function Home() {
     <>
       <Head>
         <title>OcteFlow - Soluciones en Redes</title>
-        <meta
-          name="description"
-          content="Soluciones en redes, WiFi y seguridad para empresas y hogares."
-        />
+        <meta name="description" content="Soluciones en redes, WiFi, CCTV y seguridad para empresas y hogares." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="OcteFlow" />
+        <meta property="og:description" content="Soluciones en redes y seguridad profesional" />
+        <meta property="og:image" content="/favicon.png" />
         <link rel="icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
       </Head>
 
-      <div className="page">
+      <div style={{
+        minHeight: "100vh",
+        background: "#050a30",
+        color: "white",
+        fontFamily: "Arial, sans-serif"
+      }}>
 
         {/* HEADER */}
         <header className="header">
-
-          <div className="nav">
+          <div className="container nav">
 
             <img src="/logo.svg" alt="logo" className="logo" />
 
             <button
-              className="menuButton"
+              className="menu-btn"
               onClick={() => setMenuOpen(!menuOpen)}
             >
               {menuOpen ? "✕" : "☰"}
             </button>
 
-            <nav className={`menu ${menuOpen ? "open" : ""}`}>
+            <nav className={`menu ${menuOpen ? "active" : ""}`}>
               <a href="#servicios">Servicios</a>
               <a href="#nosotros">Nosotros</a>
               <a href="#contacto">Contacto</a>
             </nav>
 
           </div>
-
         </header>
 
         {/* HERO */}
         <section className="hero">
-
           <div
-            className="heroBg"
+            className="hero-bg"
             style={{
-              backgroundImage: `url(${slides[current].image})`
+              backgroundImage: `url(${slides[current].image})`,
             }}
           >
-
             <div className="overlay">
 
-              <div className="heroContent">
+              <h1>{slides[current].title}</h1>
+              <p>{slides[current].subtitle}</p>
 
-                <h1>{slides[current].title}</h1>
+              <div className="hero-buttons">
+                <a href="https://wa.me/524421396305" className="btn">
+                  WhatsApp
+                </a>
 
-                <p>{slides[current].subtitle}</p>
+                <a href="tel:+524421396305" className="btn outline">
+                  Llamar
+                </a>
+              </div>
 
-                <div className="heroButtons">
-
-                  <a
-                    href="https://wa.me/524421396305"
-                    className="btn"
-                  >
-                    WhatsApp
-                  </a>
-
-                  <a
-                    href="tel:+524421396305"
-                    className="btnOutline"
-                  >
-                    Llamar
-                  </a>
-
-                </div>
-
-                <div className="dots">
-
-                  {slides.map((_, i) => (
-
-                    <span
-                      key={i}
-                      className={i === current ? "dot active" : "dot"}
-                      onClick={() => setCurrent(i)}
-                    ></span>
-
-                  ))}
-
-                </div>
-
+              <div className="dots">
+                {slides.map((_, i) => (
+                  <span
+                    key={i}
+                    className={i === current ? "dot active" : "dot"}
+                    onClick={() => setCurrent(i)}
+                  ></span>
+                ))}
               </div>
 
             </div>
-
           </div>
-
         </section>
 
-        {/* MENSAJE */}
-        <section className="mensaje">
+        {/* MENSAJE DE VALOR */}
+        <div style={{
+          background: "#ffffff",
+          textAlign: "center",
+          padding: "60px 20px"
+        }}>
 
-          <h2>
+          <h2 style={{
+            color: "#2ea5e4",
+            fontSize: "34px",
+            fontWeight: "700",
+            marginBottom: "15px",
+            fontFamily: "CodecPro, sans-serif"
+          }}>
             La tecnología debería simplificar tu vida, no complicarla.
           </h2>
 
-          <p>
+          <p style={{
+            fontSize: "18px",
+            color: "#333",
+            maxWidth: "700px",
+            margin: "0 auto",
+            fontFamily: "CodecPro, sans-serif",
+            fontWeight: "700"
+          }}>
             Nosotros nos encargamos de tu red, para que tú te enfoques en lo que realmente importa.
           </p>
 
-        </section>
+        </div>
 
         {/* SERVICIOS */}
-        <section id="servicios" className="servicios">
+        <div
+          id="servicios"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "20px",
+            flexWrap: "wrap",
+            padding: "40px"
+          }}
+        >
 
           {[
-            {
-              name: "PyME",
-              link: "/pyme",
-              desc: "Soluciones tecnológicas para pequeñas y medianas empresas."
-            },
-            {
-              name: "Negocio",
-              link: "/negocio",
-              desc: "Infraestructura tecnológica para operación comercial."
-            },
-            {
-              name: "Hogar",
-              link: "/hogar",
-              desc: "Conectividad inteligente y domótica para tu casa."
-            }
+            { name: "PyME", link: "/pyme" },
+            { name: "Negocio", link: "/negocio" },
+            { name: "Hogar", link: "/hogar" }
           ].map((s, i) => (
 
             <a
               key={i}
               href={s.link}
-              className="card"
+              style={{ textDecoration: "none", color: "white" }}
             >
 
-              <h3>{s.name}</h3>
+              <div
+                style={{
+                  background: "rgba(255,255,255,0.05)",
+                  padding: "20px",
+                  borderRadius: "15px",
+                  width: "250px",
+                  cursor: "pointer"
+                }}
+              >
 
-              <p>{s.desc}</p>
+                <h3>{s.name}</h3>
+
+                <p style={{ color: "#ccc" }}>
+                  Ver soluciones disponibles
+                </p>
+
+              </div>
 
             </a>
 
           ))}
 
-        </section>
+        </div>
 
         {/* CONTACTO */}
-        <section id="contacto" className="contacto">
-
+        <div id="contacto" style={{ textAlign: "center", padding: "60px 20px" }}>
           <h2>Contáctanos</h2>
 
-          <div className="contactLinks">
-
-            <a href="https://wa.me/5214421396305">WhatsApp</a>
-
-            {" | "}
-
-            <a href="mailto:contacto@octeflow.com">Correo</a>
-
-            {" | "}
-
+          <div style={{ marginTop: "20px" }}>
+            <a href="https://wa.me/5214421396305" target="_blank" rel="noopener noreferrer">WhatsApp</a> |{" "}
+            <a href="mailto:contacto@octeflow.com">Correo</a> |{" "}
             <a href="tel:+5214421396305">Llamar</a>
-
           </div>
-
-        </section>
+        </div>
 
         {/* FOOTER */}
-        <footer className="footer">
-
+        <div style={{ textAlign: "center", padding: "20px", color: "#aaa" }}>
           © 2026 OcteFlow
-
-        </footer>
+        </div>
 
       </div>
     </>
