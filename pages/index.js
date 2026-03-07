@@ -151,7 +151,9 @@ alignItems:"center",
 justifyContent:"center",
 gap:"40px",
 flexWrap:"wrap",
-marginBottom:"80px"
+marginBottom:"80px",
+maxWidth:"1200px",
+margin:"0 auto 80px auto"
 }}>
 
 <div style={{maxWidth:"450px"}}>
@@ -169,7 +171,11 @@ negocio funcione sin interrupciones.
 <a href="/pyme" style={{
 display:"inline-block",
 marginTop:"15px",
-color:"#2ea5e4"
+background:"#2ea5e4",
+color:"#fff",
+padding:"10px 18px",
+borderRadius:"6px",
+textDecoration:"none"
 }}>
 Ver soluciones →
 </a>
@@ -180,15 +186,17 @@ Ver soluciones →
 src="/pyme.jpg"
 style={{
 width:"420px",
-borderRadius:"10px"
+borderRadius:"12px",
+boxShadow:"0 15px 40px rgba(0,0,0,0.35)"
 }}
 />
 
 </div>
+</div>
 
 
 {/* NEGOCIO */}
-<div style={{background:"#0b1f66", padding:"80px 20px"}}>
+<div style={{background:"#0f2a7a", padding:"80px 20px"}}>
 <div style={{
 display:"flex",
 alignItems:"center",
@@ -203,7 +211,8 @@ margin:"0 auto"
 src="/negocio.jpg"
 style={{
 width:"420px",
-borderRadius:"10px"
+borderRadius:"12px",
+boxShadow:"0 15px 40px rgba(0,0,0,0.35)"
 }}
 />
 
@@ -222,7 +231,11 @@ Redes seguras, CCTV, WiFi profesional y monitoreo.
 <a href="/negocio" style={{
 display:"inline-block",
 marginTop:"15px",
-color:"#2ea5e4"
+background:"#2ea5e4",
+color:"#fff",
+padding:"10px 18px",
+borderRadius:"6px",
+textDecoration:"none"
 }}>
 Ver soluciones →
 </a>
@@ -232,6 +245,7 @@ Ver soluciones →
 </div>
 </div>
 
+<div style={{padding:"80px 20px"}}>
 
 {/* HOGAR */}
 <div style={{
@@ -239,7 +253,9 @@ display:"flex",
 alignItems:"center",
 justifyContent:"center",
 gap:"40px",
-flexWrap:"wrap"
+flexWrap:"wrap",
+maxWidth:"1200px",
+margin:"0 auto"
 }}>
 
 <div style={{maxWidth:"450px"}}>
@@ -257,7 +273,11 @@ soluciones de domótica para mayor comodidad.
 <a href="/hogar" style={{
 display:"inline-block",
 marginTop:"15px",
-color:"#2ea5e4"
+background:"#2ea5e4",
+color:"#fff",
+padding:"10px 18px",
+borderRadius:"6px",
+textDecoration:"none"
 }}>
 Ver soluciones →
 </a>
@@ -268,7 +288,8 @@ Ver soluciones →
 src="/hogar.jpg"
 style={{
 width:"420px",
-borderRadius:"10px"
+borderRadius:"12px",
+boxShadow:"0 15px 40px rgba(0,0,0,0.35)"
 }}
 />
 
