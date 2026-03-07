@@ -142,52 +142,136 @@ export default function Home() {
         </div>
 
         {/* SERVICIOS */}
-        <div
-          id="servicios"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: "20px",
-            flexWrap: "wrap",
-            padding: "40px"
-          }}
-        >
+<div id="servicios" style={{padding:"80px 20px"}}>
 
-          {[
-            { name: "PyME", link: "/pyme" },
-            { name: "Negocio", link: "/negocio" },
-            { name: "Hogar", link: "/hogar" }
-          ].map((s, i) => (
+{/* PYME */}
+<div style={{
+display:"flex",
+alignItems:"center",
+justifyContent:"center",
+gap:"40px",
+flexWrap:"wrap",
+marginBottom:"80px"
+}}>
 
-            <a
-              key={i}
-              href={s.link}
-              style={{ textDecoration: "none", color: "white" }}
-            >
+<div style={{maxWidth:"450px"}}>
 
-              <div
-                style={{
-                  background: "rgba(255,255,255,0.05)",
-                  padding: "20px",
-                  borderRadius: "15px",
-                  width: "250px",
-                  cursor: "pointer"
-                }}
-              >
+<h2 style={{color:"#2ea5e4"}}>
+PyME
+</h2>
 
-                <h3>{s.name}</h3>
+<p style={{color:"#ccc"}}>
+Infraestructura tecnológica diseñada para pequeñas y medianas empresas.
+Implementamos redes, WiFi empresarial, seguridad y soporte para que tu
+negocio funcione sin interrupciones.
+</p>
 
-                <p style={{ color: "#ccc" }}>
-                  Ver soluciones disponibles
-                </p>
+<a href="/pyme" style={{
+display:"inline-block",
+marginTop:"15px",
+color:"#2ea5e4"
+}}>
+Ver soluciones →
+</a>
 
-              </div>
+</div>
 
-            </a>
+<img
+src="/pyme.jpg"
+style={{
+width:"420px",
+borderRadius:"10px"
+}}
+/>
 
-          ))}
+</div>
 
-        </div>
+
+{/* NEGOCIO */}
+<div style={{
+display:"flex",
+alignItems:"center",
+justifyContent:"center",
+gap:"40px",
+flexWrap:"wrap",
+marginBottom:"80px"
+}}>
+
+<img
+src="/negocio.jpg"
+style={{
+width:"420px",
+borderRadius:"10px"
+}}
+/>
+
+<div style={{maxWidth:"450px"}}>
+
+<h2 style={{color:"#2ea5e4"}}>
+Negocio
+</h2>
+
+<p style={{color:"#ccc"}}>
+Soluciones tecnológicas para operaciones comerciales,
+tiendas, oficinas y espacios de atención al cliente.
+Redes seguras, CCTV, WiFi profesional y monitoreo.
+</p>
+
+<a href="/negocio" style={{
+display:"inline-block",
+marginTop:"15px",
+color:"#2ea5e4"
+}}>
+Ver soluciones →
+</a>
+
+</div>
+
+</div>
+
+
+{/* HOGAR */}
+<div style={{
+display:"flex",
+alignItems:"center",
+justifyContent:"center",
+gap:"40px",
+flexWrap:"wrap"
+}}>
+
+<div style={{maxWidth:"450px"}}>
+
+<h2 style={{color:"#2ea5e4"}}>
+Hogar
+</h2>
+
+<p style={{color:"#ccc"}}>
+Conectividad inteligente para tu casa.
+WiFi de alto rendimiento, cámaras de seguridad y
+soluciones de domótica para mayor comodidad.
+</p>
+
+<a href="/hogar" style={{
+display:"inline-block",
+marginTop:"15px",
+color:"#2ea5e4"
+}}>
+Ver soluciones →
+</a>
+
+</div>
+
+<img
+src="/hogar.jpg"
+style={{
+width:"420px",
+borderRadius:"10px"
+}}
+/>
+
+</div>
+
+</div>
 
         {/* CONTACTO */}
         <div id="contacto" style={{ textAlign: "center", padding: "60px 20px" }}>
