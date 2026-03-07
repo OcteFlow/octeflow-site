@@ -274,15 +274,40 @@ borderRadius:"10px"
 </div>
 
         {/* CONTACTO */}
-        <div id="contacto" style={{ textAlign: "center", padding: "60px 20px" }}>
-          <h2>Contáctanos</h2>
+<div
+  id="contacto"
+  style={{
+    background: "#ffffff",
+    color: "#000",
+    textAlign: "center",
+    padding: "80px 20px"
+  }}
+>
+  <h2 style={{ color: "#000", marginBottom: "20px" }}>
+    Contáctanos
+  </h2>
 
-          <div style={{ marginTop: "20px" }}>
-            <a href="https://wa.me/5214421396305" target="_blank" rel="noopener noreferrer">WhatsApp</a> |{" "}
-            <a href="mailto:contacto@octeflow.com">Correo</a> |{" "}
-            <a href="tel:+5214421396305">Llamar</a>
-          </div>
-        </div>
+      <div
+    style={{
+      width: "80px",
+      height: "4px",
+      background: "#2ea5e4",
+      margin: "15px auto 30px auto"
+    }}
+  ></div>
+      
+  <div style={{ marginTop: "20px" }}>
+    <a href="https://wa.me/5214421396305" target="_blank" rel="noopener noreferrer" style={{color:"#2ea5e4"}}>
+      WhatsApp
+    </a> |{" "}
+    <a href="mailto:contacto@octeflow.com" style={{color:"#2ea5e4"}}>
+      Correo
+    </a> |{" "}
+    <a href="tel:+5214421396305" style={{color:"#2ea5e4"}}>
+      Llamar
+    </a>
+  </div>
+</div>
 
         {/* FOOTER */}
         <div style={{ textAlign: "center", padding: "20px", color: "#aaa" }}>
