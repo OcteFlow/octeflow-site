@@ -328,14 +328,14 @@ transition:"transform 0.3s"
 {/* POR QUE ELEGIRNOS */}
 <div style={{
   background:"#f5f7fb",
-  padding:"80px 20px",
+  padding:"90px 20px",
   textAlign:"center"
 }}>
 
 <h2 style={{
   color:"#050a30",
   fontSize:"32px",
-  marginBottom:"50px"
+  marginBottom:"60px"
 }}>
 Por qué elegir OcteFlow
 </h2>
@@ -349,49 +349,37 @@ Por qué elegir OcteFlow
   margin:"0 auto"
 }}>
 
-<div style={{maxWidth:"260px"}}>
+<div className="feature-card">
 
-<div style={{fontSize:"40px", marginBottom:"15px"}}>
-⚡
-</div>
+<div className="feature-icon">⚡</div>
 
-<h3 style={{color:"#050a30"}}>
-Instalación rápida
-</h3>
+<h3>Instalación rápida</h3>
 
-<p style={{color:"#555"}}>
+<p>
 Implementamos tu red y equipos de forma eficiente para que tu operación no se detenga.
 </p>
 
 </div>
 
-<div style={{maxWidth:"260px"}}>
+<div className="feature-card">
 
-<div style={{fontSize:"40px", marginBottom:"15px"}}>
-🔒
-</div>
+<div className="feature-icon">🔒</div>
 
-<h3 style={{color:"#050a30"}}>
-Seguridad profesional
-</h3>
+<h3>Seguridad profesional</h3>
 
-<p style={{color:"#555"}}>
+<p>
 Protege tu empresa con redes seguras, cámaras y monitoreo confiable.
 </p>
 
 </div>
 
-<div style={{maxWidth:"260px"}}>
+<div className="feature-card">
 
-<div style={{fontSize:"40px", marginBottom:"15px"}}>
-📡
-</div>
+<div className="feature-icon">📡</div>
 
-<h3 style={{color:"#050a30"}}>
-WiFi optimizado
-</h3>
+<h3>WiFi optimizado</h3>
 
-<p style={{color:"#555"}}>
+<p>
 Diseñamos cobertura inalámbrica estable para oficinas, comercios y hogares.
 </p>
 
