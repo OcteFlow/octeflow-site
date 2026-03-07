@@ -195,9 +195,10 @@ justifyContent:"center",
 gap:"40px",
 flexWrap:"wrap",
 marginBottom:"80px",
-  background:"#0a1c55",
+  background:"#0f2a7a",
 padding:"60px 20px",
-borderRadius:"12px"
+borderRadius:"12px",
+  boxShadow:"0 10px 40px rgba(0,0,0,0.3)"
 }}>
 
 <img
