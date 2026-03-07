@@ -195,7 +195,7 @@ justifyContent:"center",
 gap:"40px",
 flexWrap:"wrap",
 marginBottom:"80px",
-  background:"#2ea5e4",
+  background:"#0a1c55",
 padding:"60px 20px",
 borderRadius:"12px"
 }}>
