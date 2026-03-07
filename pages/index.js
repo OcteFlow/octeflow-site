@@ -188,17 +188,15 @@ borderRadius:"10px"
 
 
 {/* NEGOCIO */}
+<div style={{background:"#0b1f66", padding:"80px 20px"}}>
 <div style={{
 display:"flex",
 alignItems:"center",
 justifyContent:"center",
 gap:"40px",
 flexWrap:"wrap",
-marginBottom:"80px",
-  background:"#0f2a7a",
-padding:"60px 20px",
-borderRadius:"12px",
-  boxShadow:"0 10px 40px rgba(0,0,0,0.3)"
+ maxWidth:"1200px",
+margin:"0 auto" 
 }}>
 
 <img
