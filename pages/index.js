@@ -218,7 +218,7 @@ transition:"transform 0.3s"
 
 
 {/* NEGOCIO */}
-<div style={{background:"#0f2a7a", padding:"80px 20px"}}>
+<div style={{background:"#f5f7fb", padding:"80px 20px"}}>
 <div style={{
 display:"flex",
 opacity:0,
@@ -337,7 +337,7 @@ transition:"transform 0.3s"
   fontSize:"32px",
   marginBottom:"60px"
 }}>
-Por qué elegir OcteFlow
+Por qué elegirnos
 </h2>
 
 <div style={{
