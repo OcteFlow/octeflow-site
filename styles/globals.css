@@ -199,3 +199,34 @@ a {
 img:hover{
   transform: scale(1.03);
 }
+
+
+.feature-card{
+background:white;
+padding:35px 30px;
+border-radius:12px;
+max-width:260px;
+text-align:center;
+transition:all 0.3s ease;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.feature-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.feature-card h3{
+color:#050a30;
+margin-bottom:10px;
+}
+
+.feature-card p{
+color:#555;
+font-size:14px;
+}
+
+.feature-icon{
+font-size:42px;
+margin-bottom:15px;
+}
