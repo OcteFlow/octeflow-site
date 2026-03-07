@@ -208,7 +208,8 @@ src="/pyme.jpg"
 style={{
 width:"420px",
 borderRadius:"12px",
-boxShadow:"0 15px 40px rgba(0,0,0,0.35)"
+boxShadow:"0 15px 40px rgba(0,0,0,0.35)",
+transition:"transform 0.3s"
 }}
 />
 
@@ -235,7 +236,8 @@ src="/negocio.jpg"
 style={{
 width:"420px",
 borderRadius:"12px",
-boxShadow:"0 15px 40px rgba(0,0,0,0.35)"
+boxShadow:"0 15px 40px rgba(0,0,0,0.35)",
+transition:"transform 0.3s"
 }}
 />
 
@@ -314,7 +316,8 @@ src="/hogar.jpg"
 style={{
 width:"420px",
 borderRadius:"12px",
-boxShadow:"0 15px 40px rgba(0,0,0,0.35)"
+boxShadow:"0 15px 40px rgba(0,0,0,0.35)",
+transition:"transform 0.3s"
 }}
 />
 
