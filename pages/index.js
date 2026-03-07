@@ -194,7 +194,10 @@ alignItems:"center",
 justifyContent:"center",
 gap:"40px",
 flexWrap:"wrap",
-marginBottom:"80px"
+marginBottom:"80px",
+  background:"#0b1f66",
+padding:"60px 20px",
+borderRadius:"12px"
 }}>
 
 <img
