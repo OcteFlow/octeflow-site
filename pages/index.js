@@ -230,6 +230,7 @@ Ver soluciones →
 </div>
 
 </div>
+</div>
 
 
 {/* HOGAR */}
