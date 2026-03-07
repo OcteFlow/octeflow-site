@@ -3,6 +3,7 @@ import Head from "next/head";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const slides = [
     {
@@ -32,6 +33,15 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 50);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
   return (
     <>
       <Head>
@@ -53,7 +63,16 @@ export default function Home() {
       }}>
 
         {/* HEADER */}
-        <header className="header">
+        <header
+  className="header"
+  style={{
+    background: scrolled ? "#050a30" : "transparent",
+    transition: "0.3s",
+    position: "sticky",
+    top: 0,
+    zIndex: 1000
+  }}
+>
           <div className="container nav">
 
             <img src="/logo.svg" alt="logo" className="logo" />
@@ -147,6 +166,8 @@ export default function Home() {
 {/* PYME */}
 <div style={{
 display:"flex",
+opacity:0,
+animation:"fadeUp 0.8s ease forwards",
 alignItems:"center",
 justifyContent:"center",
 gap:"40px",
@@ -199,6 +220,8 @@ boxShadow:"0 15px 40px rgba(0,0,0,0.35)"
 <div style={{background:"#0f2a7a", padding:"80px 20px"}}>
 <div style={{
 display:"flex",
+opacity:0,
+animation:"fadeUp 0.8s ease forwards",
 alignItems:"center",
 justifyContent:"center",
 gap:"40px",
@@ -250,6 +273,8 @@ Ver soluciones →
 {/* HOGAR */}
 <div style={{
 display:"flex",
+opacity:0,
+animation:"fadeUp 0.8s ease forwards",
 alignItems:"center",
 justifyContent:"center",
 gap:"40px",
