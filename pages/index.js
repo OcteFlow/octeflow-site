@@ -247,7 +247,7 @@ transition:"transform 0.3s"
 Negocio
 </h2>
 
-<p style={{color:"#ccc"}}>
+<p style={{color:"#333"}}>
 Soluciones tecnológicas para operaciones comerciales,
 tiendas, oficinas y espacios de atención al cliente.
 Redes seguras, CCTV, WiFi profesional y monitoreo.
