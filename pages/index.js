@@ -81,32 +81,51 @@ cards.forEach((card) => {
 
     const counters = document.querySelectorAll(".counter");
 
-counters.forEach((counter) => {
+const counterObserver = new IntersectionObserver((entries) => {
 
-  const updateCounter = () => {
+  entries.forEach(entry => {
 
-    const target = +counter.getAttribute("data-target");
-    const current = +counter.innerText;
+    const counter = entry.target;
 
-    const increment = target / 60;
+    if(entry.isIntersecting){
 
-    if (current < target) {
+      const target = +counter.getAttribute("data-target");
+      let current = 0;
 
-      counter.innerText = Math.ceil(current + increment);
+      const increment = target / 60;
 
-      setTimeout(updateCounter, 20);
+      const updateCounter = () => {
+
+        current += increment;
+
+        if(current < target){
+
+          counter.innerText = Math.ceil(current);
+          requestAnimationFrame(updateCounter);
+
+        } else {
+
+          counter.innerText = target;
+
+        }
+
+      };
+
+      updateCounter();
 
     } else {
 
-      counter.innerText = target;
+      counter.innerText = "0";
 
     }
 
-  };
+  });
 
-  updateCounter();
-
+},{
+  threshold:0.6
 });
+
+counters.forEach(counter => counterObserver.observe(counter));
 
 }, []);
 
