@@ -223,12 +223,8 @@ Ver soluciones →
 
 <img
 src="/pyme.jpg"
-style={{
-width:"420px",
-borderRadius:"12px",
-boxShadow:"0 15px 40px rgba(0,0,0,0.35)",
-transition:"transform 0.3s"
-}}
+className="service-image"
+style={{width:"420px"}}
 />
 
 </div>
@@ -249,12 +245,8 @@ margin:"0 auto"
 
 <img
 src="/negocio.jpg"
-style={{
-width:"420px",
-borderRadius:"12px",
-boxShadow:"0 15px 40px rgba(0,0,0,0.35)",
-transition:"transform 0.3s"
-}}
+className="service-image"
+style={{width:"420px"}}
 />
 
 <div style={{maxWidth:"450px"}}>
@@ -327,12 +319,8 @@ Ver soluciones →
 
 <img
 src="/hogar.jpg"
-style={{
-width:"420px",
-borderRadius:"12px",
-boxShadow:"0 15px 40px rgba(0,0,0,0.35)",
-transition:"transform 0.3s"
-}}
+className="service-image"
+style={{width:"420px"}}
 />
 
 </div>
