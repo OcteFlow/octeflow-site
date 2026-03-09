@@ -392,10 +392,6 @@ style={{width:"420px"}}
 
 </div>
 
-<div className="section-divider">
-<span></span>
-</div>
-
 {/* POR QUE ELEGIRNOS */}
 <div style={{
   background:"#f5f7fb",
@@ -460,10 +456,6 @@ Diseñamos cobertura inalámbrica estable para oficinas, comercios y hogares.
 
 </div>
 
-<div className="section-divider">
-<span></span>
-</div>
-
 {/* SOLUCION EN 3 PASOS */}
 
 <div className="steps-section">
@@ -510,10 +502,6 @@ Probamos, optimizamos cobertura y dejamos todo funcionando.
 
 </div>
 
-</div>
-
-<div className="section-divider">
-<span></span>
 </div>
 
         {/* CONTACTO */}
