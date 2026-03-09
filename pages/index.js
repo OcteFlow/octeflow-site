@@ -192,7 +192,7 @@ export default function Home() {
 </div>
 
 <div className="trust-item">
-<span className="trust-number">Empresas</span>
+<span className="trust-number">Clientes</span>
 <p>que confían en nuestras soluciones</p>
 </div>
 
