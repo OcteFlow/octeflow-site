@@ -652,6 +652,7 @@ align-items:center;
 justify-content:center;
 margin:80px 0;
 position:relative;
+background:transparent;
 }
 
 .section-divider::before,
@@ -662,8 +663,10 @@ height:1px;
 background:linear-gradient(
 to right,
 transparent,
-rgba(46,165,228,0.6)
+#2ea5e4,
+transparent
 );
+opacity:.6;
 }
 
 .section-divider::after{
