@@ -389,6 +389,54 @@ Diseñamos cobertura inalámbrica estable para oficinas, comercios y hogares.
 
 </div>
 
+{/* SOLUCION EN 3 PASOS */}
+
+<div className="steps-section">
+
+<h2>Soluciones para tu empresa en 3 pasos</h2>
+
+<div className="steps-container">
+
+<div className="step">
+
+<div className="step-number">1</div>
+
+<h3>Diagnóstico</h3>
+
+<p>
+Analizamos tus espacios, tu red y necesidades de conectividad.
+</p>
+
+</div>
+
+<div className="step">
+
+<div className="step-number">2</div>
+
+<h3>Implementación</h3>
+
+<p>
+Instalamos los equipos adecuados y configuramos tu red WiFi.
+</p>
+
+</div>
+
+<div className="step">
+
+<div className="step-number">3</div>
+
+<h3>Optimización</h3>
+
+<p>
+Probamos, optimizamos cobertura y dejamos todo funcionando.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
         {/* CONTACTO */}
 <div
   id="contacto"
