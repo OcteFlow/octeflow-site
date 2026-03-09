@@ -575,9 +575,64 @@ height="30"
 </a>
 
         {/* FOOTER */}
-        <div style={{ textAlign: "center", padding: "20px", color: "#aaa" }}>
-          © 2026 OcteFlow
-        </div>
+        <footer className="footer">
+
+<div className="footer-container">
+
+<div className="footer-logo">
+
+<img src="/logo.svg" alt="OcteFlow logo"/>
+
+<p>
+Soluciones profesionales en redes, conectividad y seguridad tecnológica.
+</p>
+
+</div>
+
+<div className="footer-links">
+
+<h4>Servicios</h4>
+
+<a href="/pyme">PyME</a>
+<a href="/negocio">Negocio</a>
+<a href="/hogar">Hogar</a>
+
+</div>
+
+<div className="footer-links">
+
+<h4>Empresa</h4>
+
+<a href="#servicios">Servicios</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#contacto">Contacto</a>
+
+</div>
+
+<div className="footer-contact">
+
+<h4>Contacto</h4>
+
+<p>📞 +52 442 139 6305</p>
+<p>✉ contacto@octeflow.com</p>
+
+<div className="footer-social">
+
+<a href="https://wa.me/524421396305">WhatsApp</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div className="footer-bottom">
+
+<p>© 2026 OcteFlow. Todos los derechos reservados.</p>
+
+</div>
+
+</footer>
 
       </div>
     </>
