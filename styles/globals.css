@@ -334,3 +334,39 @@ to{
 width:80px;
 }
 }
+
+.service-image{
+position:relative;
+overflow:hidden;
+border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,0.35);
+transition:transform .35s ease, box-shadow .35s ease;
+}
+
+/* zoom suave */
+.service-image:hover{
+transform:scale(1.05);
+box-shadow:0 20px 60px rgba(46,165,228,0.35);
+}
+
+/* brillo azul */
+.service-image::after{
+content:"";
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:linear-gradient(
+120deg,
+transparent,
+rgba(46,165,228,0.35),
+transparent
+);
+transition:all .6s ease;
+}
+
+/* animación del brillo */
+.service-image:hover::after{
+left:100%;
+}
