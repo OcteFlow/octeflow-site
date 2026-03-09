@@ -387,18 +387,22 @@ margin-top:30px;
 .contact-btn{
 background:#2ea5e4;
 color:white;
-padding:12px 22px;
+padding:14px 20px;
 border-radius:8px;
 text-decoration:none;
 font-weight:500;
 transition:all .3s ease;
-display:inline-block;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+width:180px;
 }
 
 .contact-btn:hover{
 transform:translateY(-2px);
 box-shadow:0 0 12px rgba(46,165,228,0.6),
-           0 0 30px rgba(46,165,228,0.4);
+0 0 30px rgba(46,165,228,0.4);
 }
 
 .whatsapp-float{
