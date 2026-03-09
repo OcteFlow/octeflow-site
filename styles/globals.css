@@ -350,13 +350,22 @@ position:relative;
 overflow:hidden;
 border-radius:12px;
 box-shadow:0 15px 40px rgba(0,0,0,0.35);
-transition:transform .35s ease, box-shadow .35s ease;
+transition:transform .4s ease, box-shadow .4s ease;
+transform-style:preserve-3d;
+perspective:1000px;
+cursor:pointer;
 }
 
 /* zoom suave */
 .service-image:hover{
-transform:scale(1.05);
-box-shadow:0 20px 60px rgba(46,165,228,0.35);
+transform:
+scale(1.06)
+rotateX(4deg)
+rotateY(-4deg);
+
+box-shadow:
+0 25px 70px rgba(0,0,0,0.45),
+0 0 40px rgba(46,165,228,0.35);
 }
 
 /* brillo azul */
