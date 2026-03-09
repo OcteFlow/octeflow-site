@@ -391,11 +391,7 @@ Diseñamos cobertura inalámbrica estable para oficinas, comercios y hogares.
 
 {/* SOLUCION EN 3 PASOS */}
 
-<div className="steps-section" style={{
-  background:"#f5f7fb",
-  padding:"90px 20px",
-  textAlign:"center"
-}}>
+<div className="steps-section">
 
 <h2>Soluciones para tu empresa en 3 pasos</h2>
 
@@ -445,7 +441,7 @@ Probamos, optimizamos cobertura y dejamos todo funcionando.
 <div
   id="contacto"
   style={{
-    background: "#ffffff",
+    background: "#f5f7fb",
     color: "#000",
     textAlign: "center",
     padding: "80px 20px"
