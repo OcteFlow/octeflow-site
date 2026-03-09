@@ -115,12 +115,13 @@ export default function Home() {
 
         {/* HERO */}
         <section className="hero animated-hero">
-          <div
-            className="hero-bg"
-            style={{
-              backgroundImage: `url(${slides[current].image})`,
-            }}
-          >
+         <div
+  key={current}
+  className="hero-bg"
+  style={{
+    backgroundImage: `url(${slides[current].image})`,
+  }}
+>
             <div className="overlay">
 
               <h1>{slides[current].title}</h1>
@@ -149,6 +150,27 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+{/* TRUST SECTION */}
+
+<div className="trust-bar">
+
+<div className="trust-item">
+<span className="trust-number">+100</span>
+<p>Instalaciones realizadas</p>
+</div>
+
+<div className="trust-item">
+<span className="trust-number">Empresas</span>
+<p>que confían en nuestras soluciones</p>
+</div>
+
+<div className="trust-item">
+<span className="trust-number">Soporte</span>
+<p>técnico especializado</p>
+</div>
+
+</div>
 
         {/* MENSAJE DE VALOR */}
         <div style={{
