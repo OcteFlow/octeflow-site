@@ -579,7 +579,7 @@ height="30"
 
 <div className="footer-container">
 
-<div className="footer-logo">
+<div className="footer-col footer-brand">
 
 <img src="/logo.svg" alt="OcteFlow logo"/>
 
@@ -589,7 +589,7 @@ Soluciones profesionales en redes, conectividad y seguridad tecnológica.
 
 </div>
 
-<div className="footer-links">
+<div className="footer-col">
 
 <h4>Servicios</h4>
 
@@ -599,7 +599,7 @@ Soluciones profesionales en redes, conectividad y seguridad tecnológica.
 
 </div>
 
-<div className="footer-links">
+<div className="footer-col">
 
 <h4>Empresa</h4>
 
@@ -609,18 +609,16 @@ Soluciones profesionales en redes, conectividad y seguridad tecnológica.
 
 </div>
 
-<div className="footer-contact">
+<div className="footer-col">
 
 <h4>Contacto</h4>
 
 <p>📞 +52 442 139 6305</p>
 <p>✉ contacto@octeflow.com</p>
 
-<div className="footer-social">
-
-<a href="https://wa.me/524421396305">WhatsApp</a>
-
-</div>
+<a className="footer-whatsapp" href="https://wa.me/524421396305">
+WhatsApp
+</a>
 
 </div>
 
