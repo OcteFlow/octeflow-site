@@ -79,6 +79,35 @@ cards.forEach((card) => {
 
 });
 
+    const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+
+  const updateCounter = () => {
+
+    const target = +counter.getAttribute("data-target");
+    const current = +counter.innerText;
+
+    const increment = target / 60;
+
+    if (current < target) {
+
+      counter.innerText = Math.ceil(current + increment);
+
+      setTimeout(updateCounter, 20);
+
+    } else {
+
+      counter.innerText = target;
+
+    }
+
+  };
+
+  updateCounter();
+
+});
+
 }, []);
 
   return (
@@ -202,22 +231,21 @@ cards.forEach((card) => {
 
 {/* TRUST SECTION */}
 
-<div className="trust-bar" style={{
-  background:"#f5f7fb"}}>
+<div className="trust-bar">
 
 <div className="trust-item">
-<span className="trust-number">+100</span>
+<span className="trust-number counter" data-target="100">0</span>
 <p>Instalaciones realizadas</p>
 </div>
 
 <div className="trust-item">
-<span className="trust-number">Clientes</span>
-<p>que confían en nuestras soluciones</p>
+<span className="trust-number counter" data-target="50">0</span>
+<p>Clientes que confían en nuestras soluciones</p>
 </div>
 
 <div className="trust-item">
-<span className="trust-number">Soporte</span>
-<p>técnico especializado</p>
+<span className="trust-number counter" data-target="200">0</span>
+<p>Dispositivos configurados</p>
 </div>
 
 </div>
