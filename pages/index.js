@@ -461,6 +461,7 @@ target="_blank"
 rel="noopener noreferrer"
 className="contact-btn"
 >
+<span className="contact-icon">🟢</span>
 WhatsApp
 </a>
 
@@ -468,6 +469,7 @@ WhatsApp
 href="mailto:contacto@octeflow.com"
 className="contact-btn"
 >
+<span className="contact-icon">✉️</span>
 Correo
 </a>
 
@@ -475,6 +477,7 @@ Correo
 href="tel:+5214421396305"
 className="contact-btn"
 >
+<span className="contact-icon">📞</span>
 Llamar
 </a>
 
