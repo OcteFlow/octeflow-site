@@ -114,7 +114,7 @@ export default function Home() {
         </header>
 
         {/* HERO */}
-        <section className="hero">
+        <section className="hero animated-hero">
           <div
             className="hero-bg"
             style={{
