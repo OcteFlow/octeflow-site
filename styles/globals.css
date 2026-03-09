@@ -509,3 +509,23 @@ transform:translate(0,0);
 transform:translate(-80px,-60px);
 }
 }
+
+.solution-btn{
+display:inline-block;
+margin-top:15px;
+background:#2ea5e4;
+color:white;
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+transition:all .3s ease;
+font-weight:500;
+}
+
+/* glow azul */
+.solution-btn:hover{
+transform:translateY(-2px);
+box-shadow:
+0 0 12px rgba(46,165,228,0.6),
+0 0 30px rgba(46,165,228,0.4);
+}
