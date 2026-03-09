@@ -333,7 +333,7 @@ transition:"transform 0.3s"
 }}>
 
 <h2 style={{
-  color:"#050a30",
+  color:"#2ea5e4",
   fontSize:"32px",
   marginBottom:"60px"
 }}>
