@@ -481,6 +481,15 @@ Llamar
 </div>
 </div>
 
+<a
+href="https://wa.me/5214421396305"
+target="_blank"
+rel="noopener noreferrer"
+className="whatsapp-float"
+>
+💬
+</a>
+
         {/* FOOTER */}
         <div style={{ textAlign: "center", padding: "20px", color: "#aaa" }}>
           © 2026 OcteFlow
