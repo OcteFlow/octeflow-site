@@ -207,15 +207,7 @@ Implementamos redes, WiFi empresarial, seguridad y soporte para que tu
 negocio funcione sin interrupciones.
 </p>
 
-<a href="/pyme" style={{
-display:"inline-block",
-marginTop:"15px",
-background:"#2ea5e4",
-color:"#fff",
-padding:"10px 18px",
-borderRadius:"6px",
-textDecoration:"none"
-}}>
+<a href="/pyme" className="solution-btn">
 Ver soluciones →
 </a>
 
@@ -261,15 +253,7 @@ tiendas, oficinas y espacios de atención al cliente.
 Redes seguras, CCTV, WiFi profesional y monitoreo.
 </p>
 
-<a href="/negocio" style={{
-display:"inline-block",
-marginTop:"15px",
-background:"#2ea5e4",
-color:"#fff",
-padding:"10px 18px",
-borderRadius:"6px",
-textDecoration:"none"
-}}>
+<a href="/negocio" className="solution-btn">
 Ver soluciones →
 </a>
 
@@ -303,15 +287,7 @@ WiFi de alto rendimiento, cámaras de seguridad y
 soluciones de domótica para mayor comodidad.
 </p>
 
-<a href="/hogar" style={{
-display:"inline-block",
-marginTop:"15px",
-background:"#2ea5e4",
-color:"#fff",
-padding:"10px 18px",
-borderRadius:"6px",
-textDecoration:"none"
-}}>
+<a href="/hogar" className="solution-btn">
 Ver soluciones →
 </a>
 
