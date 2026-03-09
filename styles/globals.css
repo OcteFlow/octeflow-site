@@ -580,3 +580,33 @@ transform:scale(1.08);
 }
 
 }
+
+.trust-bar{
+background:white;
+color:#050a30;
+display:flex;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+padding:35px 20px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.trust-item{
+min-width:180px;
+}
+
+.trust-number{
+display:block;
+font-size:26px;
+font-weight:700;
+color:#2ea5e4;
+margin-bottom:5px;
+}
+
+.trust-item p{
+font-size:14px;
+color:#444;
+margin:0;
+}
