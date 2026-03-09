@@ -151,27 +151,6 @@ export default function Home() {
           </div>
         </section>
 
-{/* TRUST SECTION */}
-
-<div className="trust-bar">
-
-<div className="trust-item">
-<span className="trust-number">+100</span>
-<p>Instalaciones realizadas</p>
-</div>
-
-<div className="trust-item">
-<span className="trust-number">Empresas</span>
-<p>que confían en nuestras soluciones</p>
-</div>
-
-<div className="trust-item">
-<span className="trust-number">Soporte</span>
-<p>técnico especializado</p>
-</div>
-
-</div>
-
         {/* MENSAJE DE VALOR */}
         <div style={{
           background: "#ffffff",
@@ -201,6 +180,28 @@ export default function Home() {
           </p>
 
         </div>
+
+{/* TRUST SECTION */}
+
+<div className="trust-bar" style={{
+  background:"#f5f7fb"}}>
+
+<div className="trust-item">
+<span className="trust-number">+100</span>
+<p>Instalaciones realizadas</p>
+</div>
+
+<div className="trust-item">
+<span className="trust-number">Empresas</span>
+<p>que confían en nuestras soluciones</p>
+</div>
+
+<div className="trust-item">
+<span className="trust-number">Soporte</span>
+<p>técnico especializado</p>
+</div>
+
+</div>
 
         {/* SERVICIOS */}
 <div id="servicios" style={{padding:"80px 20px"}}>
