@@ -310,3 +310,22 @@ animation-delay:.4s;
 .fade-delay-3{
 animation-delay:.6s;
 }
+
+.section-title{
+position:relative;
+display:inline-block;
+}
+
+.section-title::after{
+content:"";
+display:block;
+width:0;
+height:4px;
+background:#2ea5e4;
+margin:12px auto 0 auto;
+transition:width .6s ease;
+}
+
+.fade-up.show .section-title::after{
+width:80px;
+}
