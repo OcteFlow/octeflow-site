@@ -464,15 +464,6 @@ Probamos, optimizamos cobertura y dejamos todo funcionando.
   <h2 className="section-title" style={{ color: "#000", marginBottom: "20px" }}>
     Contáctanos
   </h2>
-
-      <div
-    style={{
-      width: "80px",
-      height: "4px",
-      background: "#2ea5e4",
-      margin: "15px auto 30px auto"
-    }}
-  ></div>
       
   <div style={{ marginTop: "20px" }}>
     <a href="https://wa.me/5214421396305" target="_blank" rel="noopener noreferrer" style={{color:"#2ea5e4"}}>
