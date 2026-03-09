@@ -453,17 +453,32 @@ Probamos, optimizamos cobertura y dejamos todo funcionando.
     Contáctanos
   </h2>
       
-  <div style={{ marginTop: "20px" }}>
-    <a href="https://wa.me/5214421396305" target="_blank" rel="noopener noreferrer" style={{color:"#2ea5e4"}}>
-      WhatsApp
-    </a> |{" "}
-    <a href="mailto:contacto@octeflow.com" style={{color:"#2ea5e4"}}>
-      Correo
-    </a> |{" "}
-    <a href="tel:+5214421396305" style={{color:"#2ea5e4"}}>
-      Llamar
-    </a>
-  </div>
+  <div className="contact-buttons">
+
+<a
+href="https://wa.me/5214421396305"
+target="_blank"
+rel="noopener noreferrer"
+className="contact-btn"
+>
+WhatsApp
+</a>
+
+<a
+href="mailto:contacto@octeflow.com"
+className="contact-btn"
+>
+Correo
+</a>
+
+<a
+href="tel:+5214421396305"
+className="contact-btn"
+>
+Llamar
+</a>
+
+</div>
 </div>
 
         {/* FOOTER */}
