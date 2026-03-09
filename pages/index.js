@@ -349,7 +349,7 @@ Por qué elegirnos
   margin:"0 auto"
 }}>
 
-<div className="feature-card">
+<div className="feature-card fade-up fade-delay-1">
 
 <div className="feature-icon">⚡</div>
 
@@ -361,7 +361,7 @@ Implementamos tu red y equipos de forma eficiente para que tu operación no se d
 
 </div>
 
-<div className="feature-card">
+<div className="feature-card fade-up fade-delay-2">
 
 <div className="feature-icon">🔒</div>
 
@@ -373,7 +373,7 @@ Protege tu empresa con redes seguras, cámaras y monitoreo confiable.
 
 </div>
 
-<div className="feature-card">
+<div className="feature-card fade-up fade-delay-3">
 
 <div className="feature-icon">📡</div>
 
@@ -397,7 +397,7 @@ Diseñamos cobertura inalámbrica estable para oficinas, comercios y hogares.
 
 <div className="steps-container">
 
-<div className="step">
+<div className="step fade-up fade-delay-1">
 
 <div className="step-number">1</div>
 
@@ -409,7 +409,7 @@ Analizamos tus espacios, tu red y necesidades de conectividad.
 
 </div>
 
-<div className="step">
+<div className="step fade-up fade-delay-2">
 
 <div className="step-number">2</div>
 
@@ -421,7 +421,7 @@ Instalamos los equipos adecuados y configuramos tu red WiFi.
 
 </div>
 
-<div className="step">
+<div className="step fade-up fade-delay-3">
 
 <div className="step-number">3</div>
 
