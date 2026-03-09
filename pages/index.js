@@ -54,11 +54,30 @@ export default function Home() {
       }
 
     });
+    
   });
 
   const hiddenElements = document.querySelectorAll(".fade-up");
 
   hiddenElements.forEach((el) => observer.observe(el));
+
+  const cards = document.querySelectorAll(".feature-light");
+
+cards.forEach((card) => {
+
+  card.addEventListener("mousemove", (e) => {
+
+    const rect = card.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    card.style.setProperty("--x", `${x}px`);
+    card.style.setProperty("--y", `${y}px`);
+
+  });
+
+});
 
 }, []);
 
@@ -350,7 +369,7 @@ Por qué elegirnos
   margin:"0 auto"
 }}>
 
-<div className="feature-card fade-up fade-delay-1">
+<div className="feature-card feature-light fade-up fade-delay-1">
 
 <div className="feature-icon">⚡</div>
 
@@ -362,7 +381,7 @@ Implementamos tu red y equipos de forma eficiente para que tu operación no se d
 
 </div>
 
-<div className="feature-card fade-up fade-delay-2">
+<div className="feature-card feature-light fade-up fade-delay-2">
 
 <div className="feature-icon">🔒</div>
 
@@ -374,7 +393,7 @@ Protege tu empresa con redes seguras, cámaras y monitoreo confiable.
 
 </div>
 
-<div className="feature-card fade-up fade-delay-3">
+<div className="feature-card feature-light fade-up fade-delay-3">
 
 <div className="feature-icon">📡</div>
 
