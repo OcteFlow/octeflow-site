@@ -346,7 +346,7 @@ transition:"transform 0.3s"
   textAlign:"center"
 }}>
 
-<h2 style={{
+<h2 className="section-title" style={{
   color:"#2ea5e4",
   fontSize:"32px",
   marginBottom:"60px"
@@ -407,7 +407,7 @@ Diseñamos cobertura inalámbrica estable para oficinas, comercios y hogares.
 
 <div className="steps-section">
 
-<h2>Soluciones para tu empresa en 3 pasos</h2>
+<h2 className="section-title">Soluciones para tu empresa en 3 pasos</h2>
 
 <div className="steps-container">
 
@@ -461,7 +461,7 @@ Probamos, optimizamos cobertura y dejamos todo funcionando.
     padding: "80px 20px"
   }}
 >
-  <h2 style={{ color: "#000", marginBottom: "20px" }}>
+  <h2 className="section-title" style={{ color: "#000", marginBottom: "20px" }}>
     Contáctanos
   </h2>
 
