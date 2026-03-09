@@ -145,19 +145,24 @@ a {
   gap: 15px;
 }
 
-.btn {
-  background: #2ea5e4;
-  color: white;
-  padding: 12px 22px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.3s;
-  cursor: pointer;
+.btn{
+background:#2ea5e4;
+color:white;
+padding:12px 22px;
+border-radius:8px;
+text-decoration:none;
+transition:all .3s ease;
+cursor:pointer;
+position:relative;
+overflow:hidden;
 }
 
-.btn:hover {
-  background: #0cc0df;
-  transform: scale(1.05);
+/* efecto hover */
+.btn:hover{
+background:#2ea5e4;
+transform:translateY(-2px);
+box-shadow:0 0 12px rgba(46,165,228,0.6),
+           0 0 30px rgba(46,165,228,0.4);
 }
 
 .btn.outline {
