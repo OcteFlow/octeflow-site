@@ -42,6 +42,26 @@ export default function Home() {
   return () => window.removeEventListener("scroll", handleScroll);
 }, []);
 
+  useEffect(() => {
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll(".fade-up");
+
+  hiddenElements.forEach((el) => observer.observe(el));
+
+}, []);
+
   return (
     <>
       <Head>
@@ -164,10 +184,8 @@ export default function Home() {
 <div id="servicios" style={{padding:"80px 20px"}}>
 
 {/* PYME */}
-<div style={{
+<div className="fade-up" style={{
 display:"flex",
-opacity:0,
-animation:"fadeUp 0.8s ease forwards",
 alignItems:"center",
 justifyContent:"center",
 gap:"40px",
@@ -219,10 +237,8 @@ transition:"transform 0.3s"
 
 {/* NEGOCIO */}
 <div style={{background:"#f5f7fb", padding:"80px 20px"}}>
-<div style={{
+<div className="fade-up" style={{
 display:"flex",
-opacity:0,
-animation:"fadeUp 0.8s ease forwards",
 alignItems:"center",
 justifyContent:"center",
 gap:"40px",
@@ -273,10 +289,8 @@ Ver soluciones →
 <div style={{padding:"80px 20px"}}>
 
 {/* HOGAR */}
-<div style={{
+<div className="fade-up" style={{
 display:"flex",
-opacity:0,
-animation:"fadeUp 0.8s ease forwards",
 alignItems:"center",
 justifyContent:"center",
 gap:"40px",
