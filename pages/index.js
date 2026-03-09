@@ -347,7 +347,7 @@ transition:"transform 0.3s"
 }}>
 
 <h2 className="section-title" style={{
-  color:"#2ea5e4",
+  color:"#050a30",
   fontSize:"32px",
   marginBottom:"60px"
 }}>
