@@ -281,10 +281,15 @@ font-size:14px;
 line-height:1.6;
 }
 
-.fade-up {
+.fade-up{
 opacity:0;
 transform:translateY(40px);
-animation:fadeUp 1s ease forwards;
+transition:all .8s ease;
+}
+
+.fade-up.show{
+opacity:1;
+transform:translateY(0);
 }
 
 @keyframes fadeUp {
