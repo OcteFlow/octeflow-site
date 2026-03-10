@@ -963,3 +963,17 @@ filter:blur(0px);
 }
 
 }
+
+.contact-subtitle{
+
+max-width:650px;
+
+margin:0 auto 35px auto;
+
+font-size:18px;
+
+color:#555;
+
+line-height:1.5;
+
+}
