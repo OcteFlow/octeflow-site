@@ -616,8 +616,25 @@ Soluciones profesionales en redes, conectividad y seguridad tecnológica.
 <p>📞 +52 442 139 6305</p>
 <p>✉ contacto@octeflow.com</p>
 
-<a className="footer-whatsapp" href="https://wa.me/524421396305">
+<a
+href="https://wa.me/5214421396305"
+target="_blank"
+rel="noopener noreferrer"
+className="contact-btn footer-btn"
+>
+
+<svg
+xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 24 24"
+fill="white"
+width="18"
+height="18"
+>
+<path d="M20.52 3.48A11.8 11.8 0 0 0 12.02 0C5.39 0 .02 5.37.02 12c0 2.12.55 4.19 1.6 6.02L0 24l6.15-1.6A11.94 11.94 0 0 0 12.02 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.2-3.5-8.52z"/>
+</svg>
+
 WhatsApp
+
 </a>
 
 </div>
