@@ -784,27 +784,26 @@ text-align:center;
 
 .brands-title{
 color:#050a30;
-font-size:14px;
+font-size:28px;
+font-weight:700;
 letter-spacing:1px;
-text-transform:uppercase;
-margin-bottom:25px;
-opacity:.7;
+margin-bottom:40px;
 }
 
 .brands-container{
 display:flex;
 justify-content:center;
 align-items:center;
-gap:60px;
+gap:100px;
 flex-wrap:wrap;
 max-width:900px;
 margin:auto;
 }
 
 .brands-container img{
-height:35px;
+height:100px;
 width:auto;
-opacity:.7;
+opacity:.75;
 transition:all .3s ease;
 filter:grayscale(100%);
 }
