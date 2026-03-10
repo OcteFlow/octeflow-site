@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -172,10 +173,10 @@ counters.forEach(counter => counterObserver.observe(counter));
             </button>
 
             <nav className={`menu ${menuOpen ? "active" : ""}`}>
-              <a href="#servicios">Servicios</a>
-              <a href="/nosotros">Nosotros</a>
-              <a href="#contacto">Contacto</a>
-            </nav>
+  <a href="#servicios">Servicios</a>
+  <Link href="/nosotros">Nosotros</Link>
+  <a href="#contacto">Contacto</a>
+</nav>
 
           </div>
         </header>
@@ -294,9 +295,9 @@ Implementamos redes, WiFi empresarial, seguridad y soporte para que tu
 negocio funcione sin interrupciones.
 </p>
 
-<a href="/pyme" className="solution-btn">
+<Link href="/pyme" className="solution-btn">
 Ver soluciones →
-</a>
+</Link>
 
 </div>
 
@@ -340,9 +341,9 @@ tiendas, oficinas y espacios de atención al cliente.
 Redes seguras, CCTV, WiFi profesional y monitoreo.
 </p>
 
-<a href="/negocio" className="solution-btn">
+<Link href="/negocio" className="solution-btn">
 Ver soluciones →
-</a>
+</Link>
 
 </div>
 
@@ -374,9 +375,9 @@ WiFi de alto rendimiento, cámaras de seguridad y
 soluciones de domótica para mayor comodidad.
 </p>
 
-<a href="/hogar" className="solution-btn">
+<Link href="/hogar" className="solution-btn">
 Ver soluciones →
-</a>
+</Link>
 
 </div>
 
@@ -627,9 +628,9 @@ height="30"
 
 <h4>Servicios</h4>
 
-<a href="/pyme">PyME</a>
-<a href="/negocio">Negocio</a>
-<a href="/hogar">Hogar</a>
+<Link href="/pyme">PyME</Link>
+<Link href="/negocio">Negocio</Link>
+<Link href="/hogar">Hogar</Link>
 
 </div>
 
