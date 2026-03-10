@@ -235,16 +235,14 @@ counters.forEach(counter => counterObserver.observe(counter));
             La tecnología debería simplificar tu vida, no complicarla.
           </h2>
 
-          <p style={{
-            fontSize: "18px",
-            color: "#333",
-            maxWidth: "700px",
-            margin: "0 auto",
-            fontFamily: "CodecPro, sans-serif",
-            fontWeight: "700"
-          }}>
-            Nosotros nos encargamos de tu red, para que tú te enfoques en lo que realmente importa.
-          </p>
+          <p className="dynamic-connectivity">
+Conectividad Inteligente para tu 
+<span className="word-slider">
+<span className="word">Empresa</span>
+<span className="word">Negocio</span>
+<span className="word">Hogar</span>
+</span>
+</p>
 
         </div>
 
@@ -618,10 +616,6 @@ height="30"
 <div className="footer-col footer-brand">
 
 <img src="/logo.svg" alt="OcteFlow logo"/>
-
-<p>
-Soluciones profesionales en redes, conectividad y seguridad tecnológica.
-</p>
 
 </div>
 
