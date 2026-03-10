@@ -396,9 +396,9 @@ style={{width:"420px"}}
 
 <div className="brands-section">
 
-<p className="brands-title">
+<h2 className="section-title">
 Tecnologías con las que trabajamos
-</p>
+</h2>
 
 <div className="brands-container">
 
