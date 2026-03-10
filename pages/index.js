@@ -404,13 +404,23 @@ style={{width:"420px"}}
 Tecnologías con las que trabajamos
 </h2>
 
-<div className="brands-container">
+<div className="brands-slider">
 
-<img src="/omada.png" alt="Omada"/>
-  <img src="/unifi.png" alt="Unifi"/>
-<img src="/tplink.png" alt="TP-Link"/>
+<div className="brands-track">
+
+<img src="/cisco.png" alt="Cisco"/>
 <img src="/ubiquiti.png" alt="Ubiquiti"/>
-  <img src="/cisco.png" alt="Cisco"/>
+<img src="/tplink.png" alt="TP-Link"/>
+<img src="/hikvision.png" alt="Hikvision"/>
+
+{/* duplicamos para loop infinito */}
+
+<img src="/cisco.png" alt="Cisco"/>
+<img src="/ubiquiti.png" alt="Ubiquiti"/>
+<img src="/tplink.png" alt="TP-Link"/>
+<img src="/hikvision.png" alt="Hikvision"/>
+
+</div>
 
 </div>
 
