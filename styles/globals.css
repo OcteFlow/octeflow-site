@@ -1043,3 +1043,58 @@ margin:auto;
 line-height:1.8;
 font-size:18px;
 }
+
+.benefits-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.benefit-card{
+background:white;
+padding:30px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+font-size:22px;
+}
+
+.benefit-card h3{
+margin-top:10px;
+font-size:18px;
+}
+
+.cta-section{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:90px 20px;
+}
+
+.cta-section h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.cta-section p{
+max-width:700px;
+margin:auto;
+margin-bottom:30px;
+opacity:.9;
+}
+
+.cta-btn{
+background:#2ea5e4;
+color:white;
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.cta-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
