@@ -269,6 +269,25 @@ counters.forEach(counter => counterObserver.observe(counter));
 
 </div>
 
+{/* MARCAS / TECNOLOGÍAS */}
+
+<div className="brands-section">
+
+<p className="brands-title">
+Tecnologías con las que trabajamos
+</p>
+
+<div className="brands-container">
+
+<img src="/omada.png" alt="Omada"/>
+<img src="/ubiquiti.png" alt="Ubiquiti"/>
+<img src="/tplink.png" alt="TP-Link"/>
+<img src="/cisco.png" alt="Cisco"/>
+
+</div>
+
+</div>
+
         {/* SERVICIOS */}
 <div id="servicios" style={{padding:"80px 20px"}}>
 
