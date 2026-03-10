@@ -407,9 +407,10 @@ Tecnologías con las que trabajamos
 <div className="brands-container">
 
 <img src="/omada.png" alt="Omada"/>
-<img src="/ubiquiti.png" alt="Ubiquiti"/>
+  <img src="/unifi.png" alt="Unifi"/>
 <img src="/tplink.png" alt="TP-Link"/>
-<img src="/cisco.png" alt="Cisco"/>
+<img src="/ubiquiti.png" alt="Ubiquiti"/>
+  <img src="/cisco.png" alt="Cisco"/>
 
 </div>
 
