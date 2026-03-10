@@ -805,3 +805,66 @@ opacity:1;
 filter:grayscale(0%);
 transform:scale(1.05);
 }
+
+.brands-slider{
+overflow:hidden;
+width:100%;
+margin-top:40px;
+position:relative;
+}
+
+.brands-slider::before,
+.brands-slider::after{
+content:"";
+position:absolute;
+top:0;
+width:120px;
+height:100%;
+z-index:2;
+}
+
+.brands-slider::before{
+left:0;
+background:linear-gradient(to right, white, transparent);
+}
+
+.brands-slider::after{
+right:0;
+background:linear-gradient(to left, white, transparent);
+}
+
+.brands-track{
+display:flex;
+align-items:center;
+gap:120px;
+
+width:max-content;
+
+animation:scrollBrands 35s linear infinite;
+}
+
+.brands-track img{
+height:100px;
+width:auto;
+opacity:.8;
+filter:grayscale(100%);
+transition:all .3s ease;
+}
+
+.brands-track img:hover{
+filter:grayscale(0%);
+opacity:1;
+transform:scale(1.05);
+}
+
+@keyframes scrollBrands{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
