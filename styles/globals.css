@@ -912,11 +912,11 @@ animation:wordSlide 7s ease-in-out infinite;
 
 @keyframes wordSlide{
 
-0%{
+/*0%{
 transform:translateY(0);
 opacity:1;
 filter:blur(0px);
-}
+}*/
 
 25%{
 transform:translateY(0);
