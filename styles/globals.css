@@ -1024,17 +1024,20 @@ margin-top:40px;
 
 .catalog-block{
 background:white;
+color:#111;
 padding:30px;
 border-radius:10px;
-box-shadow:0 10px 30px rgba(0,0,0,.05);
+box-shadow:0 10px 25px rgba(0,0,0,.05);
 }
 
 .catalog-block h3{
+color:#0f172a;
 margin-bottom:10px;
 }
 
 .catalog-block ul{
-padding-left:18px;
+color:#333;
+line-height:1.7;
 }
 
 .catalog-list{
