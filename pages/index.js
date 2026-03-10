@@ -548,9 +548,13 @@ Probamos, optimizamos cobertura y dejamos todo funcionando.
     padding: "80px 20px"
   }}
 >
-  <h2 className="section-title" style={{ color: "#000", marginBottom: "20px" }}>
-    Contáctanos
-  </h2>
+  <h2 className="section-title" style={{ color: "#000", marginBottom: "15px" }}>
+  ¿Listo para mejorar tu red?
+</h2>
+
+    <p className="contact-subtitle">
+Contáctanos y descubre cómo mejorar la conectividad de tu empresa, negocio u hogar.
+</p>
       
   <div className="contact-buttons">
 
@@ -673,7 +677,9 @@ WhatsApp
 
 <div className="footer-bottom">
 
-<p>© 2026 OcteFlow. Todos los derechos reservados.</p>
+<p>
+© {new Date().getFullYear()} OcteFlow. Todos los derechos reservados.
+</p>
 
 </div>
 
