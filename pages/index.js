@@ -396,7 +396,11 @@ style={{width:"420px"}}
 
 <div className="brands-section">
 
-<h2 className="section-title">
+<h2 className="section-title" style={{
+  color:"#050a30",
+  fontSize:"32px",
+  marginBottom:"60px"
+}}>
 Tecnologías con las que trabajamos
 </h2>
 
