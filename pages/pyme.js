@@ -1,8 +1,11 @@
 import Head from "next/head";
+import HeaderPages from "../components/HeaderPages";
+import Footer from "../components/Footer";
 
 export default function Pyme() {
   return (
     <>
+    <HeaderPages />
       <Head>
         <title>Soluciones de Red para PyME | OcteFlow</title>
         <meta
@@ -194,6 +197,7 @@ export default function Pyme() {
 
       </section>
 
+     <Footer />
     </>
   );
 }
