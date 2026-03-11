@@ -1,8 +1,22 @@
-export default function PyME() {
+export default function CTASection({ title, text, button }) {
   return (
-    <div style={{padding:"80px", fontFamily:"Arial"}}>
-      <h1>Soluciones para Negocios</h1>
-      <p>Aquí irá el catálogo de servicios para pequeñas y medianas empresas.</p>
-    </div>
+
+    <section className="cta-section">
+
+      <h2>{title}</h2>
+
+      <p>{text}</p>
+
+      <a
+        href="https://wa.me/5214421396305"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="cta-btn"
+      >
+        {button}
+      </a>
+
+    </section>
+
   );
 }
