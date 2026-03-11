@@ -11,16 +11,27 @@ export default function Negocio() {
     <>
       <HeaderPages/>
 
+      <Head>
+        <title>Redes y WiFi para el Hogar | OcteFlow</title>
+      </Head>
+
       <section className="page-hero">
-        <h1>Conectividad para Negocios</h1>
+        <h1>Conectividad inteligente para tu hogar</h1>
         <p>
-          Soluciones de red y seguridad para locales comerciales.
+          Disfruta WiFi rápido y estable en toda tu casa con una red bien
+          diseñada.
         </p>
       </section>
 
       <CatalogSection
         title="Soluciones para Negocios"
         items={catalogData.negocio}
+      />
+
+        <CTASection
+        title="Mejora la conectividad de tu negocio"
+        text="Podemos evaluar tu red actual y proponerte una solución profesional."
+        button="Solicitar asesoría"
       />
 
       <Footer/>
