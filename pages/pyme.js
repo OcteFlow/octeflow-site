@@ -11,6 +11,10 @@ export default function Pyme() {
     <>
       <HeaderPages/>
 
+    <Head>
+        <title>Soluciones de Red para PyME | OcteFlow</title>
+      </Head>
+    
       <section className="page-hero">
         <h1>Soluciones de Red para PyME</h1>
         <p>
@@ -21,6 +25,12 @@ export default function Pyme() {
       <CatalogSection
         title="Servicios para PyME"
         items={catalogData.pyme}
+      />
+
+        <CTASection
+        title="Mejora la conectividad de tu Empresa"
+        text="Podemos evaluar tu red actual y proponerte una solución profesional."
+        button="Solicitar asesoría"
       />
 
       <Footer/>
