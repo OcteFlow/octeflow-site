@@ -1,5 +1,7 @@
 export default function CatalogSection({ title, items }) {
+
   return (
+
     <section className="page-section gray">
 
       <h2 className="section-title">{title}</h2>
@@ -15,11 +17,13 @@ export default function CatalogSection({ title, items }) {
             {item.description && <p>{item.description}</p>}
 
             {item.list && (
+
               <ul>
                 {item.list.map((point, i) => (
                   <li key={i}>{point}</li>
                 ))}
               </ul>
+
             )}
 
           </div>
@@ -29,5 +33,7 @@ export default function CatalogSection({ title, items }) {
       </div>
 
     </section>
+
   );
+
 }
