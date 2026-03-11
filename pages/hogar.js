@@ -11,16 +11,27 @@ export default function Hogar() {
     <>
       <HeaderPages/>
 
+      <Head>
+        <title>Redes y WiFi para el Hogar | OcteFlow</title>
+      </Head>
+
       <section className="page-hero">
-        <h1>Conectividad para tu Hogar</h1>
+        <h1>Conectividad inteligente para tu hogar</h1>
         <p>
-          Disfruta WiFi rápido y estable en toda tu casa.
+          Disfruta WiFi rápido y estable en toda tu casa con una red bien
+          diseñada.
         </p>
       </section>
 
       <CatalogSection
-        title="Servicios para el Hogar"
+        title="Soluciones para tu Hogar"
         items={catalogData.hogar}
+      />
+
+        <CTASection
+        title="Mejora tu WiFi en casa"
+        text="Podemos optimizar tu red doméstica para una mejor experiencia."
+        button="Solicitar diagnóstico"
       />
 
       <Footer/>
