@@ -1271,25 +1271,11 @@ flex-wrap:wrap;
 
 .process-section{
 
-padding:90px 20px;
+padding:100px 20px;
 
 background:#f8fafc;
 
 text-align:center;
-
-}
-
-.process-subtitle{
-
-max-width:700px;
-
-margin:auto;
-
-margin-bottom:60px;
-
-color:#555;
-
-font-size:18px;
 
 }
 
@@ -1301,7 +1287,7 @@ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
 gap:30px;
 
-max-width:1100px;
+max-width:1200px;
 
 margin:auto;
 
@@ -1317,15 +1303,23 @@ border-radius:10px;
 
 box-shadow:0 10px 30px rgba(0,0,0,.08);
 
-transition:transform .2s;
+}
+
+/* TEXTO NEGRO */
+
+.process-card h3{
+
+color:#111;
 
 }
 
-.process-card:hover{
+.process-card p{
 
-transform:translateY(-6px);
+color:#333;
 
 }
+
+/* NUMEROS */
 
 .process-number{
 
@@ -1333,7 +1327,7 @@ width:45px;
 
 height:45px;
 
-background:#1d4ed8;
+background:#2ea5e4;
 
 color:white;
 
