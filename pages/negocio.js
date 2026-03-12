@@ -20,8 +20,7 @@ export default function Negocio() {
       <section className="page-hero">
         <h1>Soluciones para tu Negocio</h1>
         <p>
-          Disfruta WiFi rápido y estable en toda tu casa con una red bien
-          diseñada.
+          Diseñadas para mejorar la conectividad, la protección y la experiencia de tus clientes.
         </p>
       </section>
 
