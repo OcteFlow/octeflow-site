@@ -14,11 +14,11 @@ export default function Negocio() {
       <HeaderPages/>
 
       <Head>
-        <title>Redes y WiFi para el Hogar | OcteFlow</title>
+        <title>Redes y WiFi para tu Negocio | OcteFlow</title>
       </Head>
 
       <section className="page-hero">
-        <h1>Conectividad inteligente para tu hogar</h1>
+        <h1>Soluciones para tu Negocio</h1>
         <p>
           Disfruta WiFi rápido y estable en toda tu casa con una red bien
           diseñada.
