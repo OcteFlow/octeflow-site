@@ -1,6 +1,8 @@
+import Head from "next/head";
 import HeaderPages from "../components/HeaderPages";
 import Footer from "../components/Footer";
 import CatalogSection from "../components/CatalogSection";
+import CTASection from "../components/CTASection";
 
 import { catalogData } from "../data/catalogData";
 
