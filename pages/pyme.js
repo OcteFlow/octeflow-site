@@ -6,6 +6,7 @@ import CatalogSection from "../components/CatalogSection";
 import ProcessSection from "../components/ProcessSection";
 import UseCasesSection from "../components/UseCasesSection";
 import { useCasesData } from "../data/useCasesData";
+import BrandsSection from "../components/BrandsSection";
 import CTASection from "../components/CTASection";
 
 import { catalogData } from "../data/catalogData";
@@ -38,6 +39,8 @@ image="/pyme.jpg"
 title="Casos de uso para empresas"
 cases={useCasesData.pyme}
 />
+
+  <BrandsSection showTitle={false} />
         
         <CTASection
         title="Mejora la conectividad de tu Empresa"
