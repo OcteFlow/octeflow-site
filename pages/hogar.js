@@ -18,7 +18,7 @@ export default function Hogar() {
       </Head>
 
       <section className="page-hero">
-        <h1>Conectividad inteligente para tu hogar</h1>
+        <h1>Conectividad inteligente para tu Hogar</h1>
         <p>
           Disfruta WiFi rápido y estable en toda tu casa con una red bien
           diseñada.
