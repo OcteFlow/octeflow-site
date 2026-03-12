@@ -1,5 +1,6 @@
 import Head from "next/head";
 import HeaderPages from "../components/HeaderPages";
+import BannerPage from "../components/BannerPage";
 import Footer from "../components/Footer";
 import CatalogSection from "../components/CatalogSection";
 import CTASection from "../components/CTASection";
@@ -14,15 +15,13 @@ export default function Negocio() {
       <HeaderPages/>
 
       <Head>
-        <title>Redes y WiFi para tu Negocio | OcteFlow</title>
+        <title>Soluciones para tu Negocio | OcteFlow</title>
       </Head>
 
-      <section className="page-hero">
-        <h1>Soluciones para tu Negocio</h1>
-        <p>
-          Diseñadas para mejorar la conectividad, la protección y la experiencia de tus clientes.
-        </p>
-      </section>
+    <BannerPage
+title="Soluciones para tu Negocio"
+subtitle="Diseñadas para mejorar la conectividad, la protección y la experiencia de tus clientes."
+/>
 
       <CatalogSection
         title="Soluciones para Negocios"
