@@ -20,7 +20,7 @@ export default function Pyme() {
       <section className="page-hero">
         <h1>Soluciones para PyME</h1>
         <p>
-          Infraestructura tecnológica diseñada para empresas en crecimiento.
+          Infraestructura de red profesional diseñada para empresas que necesitan conectividad estable y tecnología preparada para crecer.
         </p>
       </section>
 
