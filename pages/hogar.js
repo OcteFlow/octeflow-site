@@ -21,7 +21,7 @@ export default function Hogar() {
     <BannerPage
 title="Soluciones para tu Hogar"
 subtitle="Conectividad confiable en toda tu casa y tecnología para disfrutar un hogar más cómodo, seguro y eficiente."
-image="/images/hogar.jpg"
+image="/public/hogar.jpg"
   />
 
       <CatalogSection
