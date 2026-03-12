@@ -14,7 +14,7 @@ export default function BrandsSection({ showTitle = true }) {
             marginBottom: "60px"
           }}
         >
-          Tecnologías con las que trabajamos
+          Trabajamos con tecnologías líderes de la industria
         </h2>
 
       )}
