@@ -1,5 +1,6 @@
 import Head from "next/head";
 import HeaderPages from "../components/HeaderPages";
+import BannerPage from "../components/BannerPage";
 import Footer from "../components/Footer";
 import CatalogSection from "../components/CatalogSection";
 import CTASection from "../components/CTASection";
@@ -17,12 +18,10 @@ export default function Hogar() {
         <title>Soluciones para el Hogar | OcteFlow</title>
       </Head>
 
-      <section className="page-hero">
-        <h1>Soluciones para tu Hogar</h1>
-        <p>
-          Conectividad confiable en toda tu casa y tecnología para disfrutar un hogar más cómodo, seguro y eficiente.
-        </p>
-      </section>
+    <BannerPage
+title="Soluciones para tu Hogar"
+subtitle="Conectividad confiable en toda tu casa y tecnología para disfrutar un hogar más cómodo, seguro y eficiente."
+/>
 
       <CatalogSection
         title="Soluciones para tu Hogar"
