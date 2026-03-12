@@ -18,7 +18,7 @@ export default function Hogar() {
       </Head>
 
       <section className="page-hero">
-        <h1>Conectividad inteligente para tu Hogar</h1>
+        <h1>Soluciones para tu Hogar</h1>
         <p>
           Conectividad confiable en toda tu casa y tecnología para disfrutar un hogar más cómodo, seguro y eficiente.
         </p>
