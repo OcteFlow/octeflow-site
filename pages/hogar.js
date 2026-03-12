@@ -3,6 +3,7 @@ import HeaderPages from "../components/HeaderPages";
 import BannerPage from "../components/BannerPage";
 import Footer from "../components/Footer";
 import CatalogSection from "../components/CatalogSection";
+import ProcessSection from "../components/ProcessSection";
 import CTASection from "../components/CTASection";
 
 import { catalogData } from "../data/catalogData";
@@ -21,7 +22,7 @@ export default function Hogar() {
     <BannerPage
 title="Soluciones para tu Hogar"
 subtitle="Conectividad confiable en toda tu casa y tecnología para disfrutar un hogar más cómodo, seguro y eficiente."
-image="/public/hogar.jpg"
+image="/hogar.jpg"
   />
 
       <CatalogSection
@@ -29,6 +30,8 @@ image="/public/hogar.jpg"
         items={catalogData.hogar}
       />
 
+        <ProcessSection/>
+        
         <CTASection
         title="Mejora tu WiFi en casa"
         text="Podemos optimizar tu red doméstica para una mejor experiencia."
