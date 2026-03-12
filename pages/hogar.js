@@ -14,7 +14,7 @@ export default function Hogar() {
       <HeaderPages/>
 
       <Head>
-        <title>Redes y WiFi para el Hogar | OcteFlow</title>
+        <title>Soluciones para el Hogar | OcteFlow</title>
       </Head>
 
       <section className="page-hero">
