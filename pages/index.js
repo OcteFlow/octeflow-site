@@ -608,7 +608,7 @@ height="30"
 <h4>Empresa</h4>
 
 <a href="#servicios">Servicios</a>
-<a href="#nosotros">Nosotros</a>
+<Link href="/nosotros">Nosotros</Link>
 <a href="#contacto">Contacto</a>
 
 </div>
