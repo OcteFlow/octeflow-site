@@ -1,8 +1,11 @@
-export default function BannerPage({ title, subtitle }) {
+export default function BannerPage({ title, subtitle, image }) {
 
   return (
 
-    <section className="page-banner">
+    <section
+      className="page-banner"
+      style={{ backgroundImage: `url(${image})` }}
+    >
 
       <div className="page-banner-overlay">
 
