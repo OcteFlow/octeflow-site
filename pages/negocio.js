@@ -21,7 +21,8 @@ export default function Negocio() {
     <BannerPage
 title="Soluciones para tu Negocio"
 subtitle="Diseñadas para mejorar la conectividad, la protección y la experiencia de tus clientes."
-/>
+image="/images/negocio.jpg"
+  />
 
       <CatalogSection
         title="Soluciones para Negocios"
