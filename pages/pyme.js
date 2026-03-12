@@ -22,7 +22,7 @@ export default function Pyme() {
     <BannerPage
 title="Soluciones para PyME"
 subtitle="Infraestructura de red profesional diseñada para empresas que necesitan conectividad estable y tecnología preparada para crecer."
-image="/images/pyme.jpg"
+image="/pyme.jpg"
   />
 
       <CatalogSection
