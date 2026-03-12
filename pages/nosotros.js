@@ -1,6 +1,7 @@
 import Head from "next/head";
 import HeaderPages from "../components/HeaderPages";
 import Footer from "../components/Footer";
+import CTASection from "../components/CTASection";
 
 export default function Nosotros() {
   return (
