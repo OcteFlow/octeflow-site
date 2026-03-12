@@ -3,6 +3,7 @@ import HeaderPages from "../components/HeaderPages";
 import BannerPage from "../components/BannerPage";
 import Footer from "../components/Footer";
 import CatalogSection from "../components/CatalogSection";
+import ProcessSection from "../components/ProcessSection";
 import CTASection from "../components/CTASection";
 
 import { catalogData } from "../data/catalogData";
@@ -29,6 +30,8 @@ image="/images/pyme.jpg"
         items={catalogData.pyme}
       />
 
+        <ProcessSection/>
+        
         <CTASection
         title="Mejora la conectividad de tu Empresa"
         text="Podemos evaluar tu red actual y proponerte una solución profesional."
