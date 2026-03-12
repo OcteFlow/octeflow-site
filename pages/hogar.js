@@ -4,6 +4,8 @@ import BannerPage from "../components/BannerPage";
 import Footer from "../components/Footer";
 import CatalogSection from "../components/CatalogSection";
 import ProcessSection from "../components/ProcessSection";
+import UseCasesSection from "../components/UseCasesSection";
+import { useCasesData } from "../data/useCasesData";
 import CTASection from "../components/CTASection";
 
 import { catalogData } from "../data/catalogData";
@@ -31,6 +33,11 @@ image="/hogar.jpg"
       />
 
         <ProcessSection/>
+
+        <UseCasesSection
+title="Experiencias para el hogar"
+cases={useCasesData.hogar}
+/>
         
         <CTASection
         title="Mejora tu WiFi en casa"
