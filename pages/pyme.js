@@ -1,5 +1,6 @@
 import Head from "next/head";
 import HeaderPages from "../components/HeaderPages";
+import BannerPage from "../components/BannerPage";
 import Footer from "../components/Footer";
 import CatalogSection from "../components/CatalogSection";
 import CTASection from "../components/CTASection";
@@ -16,13 +17,11 @@ export default function Pyme() {
     <Head>
         <title>Soluciones de Red para PyME | OcteFlow</title>
       </Head>
-    
-      <section className="page-hero">
-        <h1>Soluciones para PyME</h1>
-        <p>
-          Infraestructura de red profesional diseñada para empresas que necesitan conectividad estable y tecnología preparada para crecer.
-        </p>
-      </section>
+
+    <BannerPage
+title="Soluciones para PyME"
+subtitle="Infraestructura de red profesional diseñada para empresas que necesitan conectividad estable y tecnología preparada para crecer."
+/>
 
       <CatalogSection
         title="Servicios para PyME"
