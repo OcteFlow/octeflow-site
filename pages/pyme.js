@@ -18,7 +18,7 @@ export default function Pyme() {
       </Head>
     
       <section className="page-hero">
-        <h1>Soluciones de Red para PyME</h1>
+        <h1>Soluciones para PyME</h1>
         <p>
           Infraestructura tecnológica diseñada para empresas en crecimiento.
         </p>
