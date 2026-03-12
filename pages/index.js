@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
+import BrandsSection from "../components/BrandsSection";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -393,39 +394,7 @@ style={{width:"420px"}}
 
 {/* MARCAS / TECNOLOGÍAS */}
 
-<div className="brands-section">
-
-<h2 className="section-title" style={{
-  color:"#050a30",
-  fontSize:"32px",
-  marginBottom:"60px"
-}}>
-Tecnologías con las que trabajamos
-</h2>
-
-<div className="brands-slider">
-
-<div className="brands-track">
-
-<img src="/omada.png" alt="Omada"/>
-  <img src="/unifi.png" alt="Unifi"/>
-<img src="/tplink.png" alt="TP-Link"/>
-  <img src="/ubiquiti.png" alt="Ubiquiti"/>
-<img src="/cisco.png" alt="Cisco"/>
-
-{/* duplicamos para loop infinito */}
-
-<img src="/omada.png" alt="Omada"/>
-  <img src="/unifi.png" alt="Unifi"/>
-<img src="/tplink.png" alt="TP-Link"/>
-  <img src="/ubiquiti.png" alt="Ubiquiti"/>
-<img src="/cisco.png" alt="Cisco"/>
-
-</div>
-
-</div>
-
-</div>
+<BrandsSection showTitle={true} />
 
 {/* POR QUE ELEGIRNOS */}
 <div style={{
