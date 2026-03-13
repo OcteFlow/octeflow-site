@@ -18,7 +18,7 @@ export default function Nosotros() {
       {/* BANNER */}
 
       <BannerPage
-        title="Sobre OcteFlow"
+        title="Acerca de OcteFlow"
         subtitle="Creamos soluciones de conectividad inteligentes para empresas, negocios y hogares que necesitan redes confiables y seguras."
         image="/nosotros.jpg"
       />
