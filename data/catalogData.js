@@ -3,7 +3,6 @@ export const catalogData = {
   pyme: [
     {
       title: "Diagnóstico y Evaluación de Red",
-      description: "Analizamos tu infraestructura para identificar problemas y oportunidades de mejora.",
       list: [
         "Estudio profesional de cobertura WiFi",
         "Auditoría de red existente",
