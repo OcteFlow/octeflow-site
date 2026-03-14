@@ -34,15 +34,25 @@ export default function Nosotros() {
         <div className="about-card">
 
           <p>
-            En OcteFlow ayudamos a empresas y negocios a contar con redes
+            En OcteFlow ayudamos a empresas, negocios y hogares a contar con redes
             modernas, seguras y escalables que les permitan operar sin
             interrupciones.
           </p>
 
           <p>
-            Diseñamos, implementamos y optimizamos infraestructura de red,
-            conectividad inalámbrica y sistemas de seguridad tecnológica
-            con estándares profesionales.
+            Ofrecemos soluciones de conectividad inteligente mediante el diseño, implementación y 
+            optimización de redes confiables, seguras y de alto rendimiento, adaptadas a las necesidades de cada cliente.
+          </p>
+
+          <p>
+            Buscamos transformar la experiencia digital de hogares, PyMEs y entornos comerciales,
+            respaldada por un servicio profesional y un enfoque personalizado. 
+
+          </p>
+            Aspiramos a convertirnos en el aliado tecnológico de confianza para nuestros clientes, 
+            acompañando su crecimiento a través de infraestructura sólida y escalable.
+          <p>
+            
           </p>
 
         </div>
