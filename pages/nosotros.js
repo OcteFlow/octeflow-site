@@ -108,7 +108,10 @@ export default function Nosotros() {
 
       </section>
 
-      <WhySection items={whyData} />
+      <WhySection
+title="¿Por qué elegir OcteFlow?"
+items={whyData}
+/>
 
       <CTASection
         title="Mejora la conectividad de tu red"
