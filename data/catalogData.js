@@ -12,20 +12,43 @@ export const catalogData = {
     },
 
     {
-      title: "Diseño de Infraestructura",
+      title: "Diseño e Implementación de Infraestructura",
       list: [
         "Arquitectura de red empresarial",
+        "Suministro de equipos",
+        "Instalación de equipos y cableado estructurado",
+        "Configuración profesional",
         "Segmentación de red",
-        "Planificación de crecimiento"
+        "Memoria Técnica"
       ]
     },
 
     {
-      title: "Implementación",
+      title: "Optimización y Reingeniería",
       list: [
-        "Instalación de cableado estructurado",
-        "Configuración de switches",
-        "Instalación de access points"
+        "Mejora de red existente",
+        "Eliminación de zonas muertas",
+        "Balanceo de carga",
+        "Mejora de rendimiento"
+      ]
+    },
+    
+    {
+      title: "Soporte y Mantenimiento (Bajo Contrato o Por Evento)",
+      list: [
+        "Monitoreo",
+        "Soporte remoto y/o en sitio",
+        "Mantenimiento preventivo",
+        "Atención a fallas críticas"
+      ]
+    },
+
+    {
+      title: "Redes para Crecimiento",
+      list: [
+        "Escalabilidad",
+        "Apertura de nuevas sucursales",
+        "Estandarización de red"
       ]
     }
   ],
