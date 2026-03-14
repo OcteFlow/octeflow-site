@@ -1,6 +1,8 @@
 import Head from "next/head";
 import HeaderPages from "../components/HeaderPages";
 import Footer from "../components/Footer";
+import WhySection from "../components/WhySection";
+import { whyData } from "../data/whyData";
 import CTASection from "../components/CTASection";
 import BannerPage from "../components/BannerPage";
 
@@ -105,6 +107,8 @@ export default function Nosotros() {
         </div>
 
       </section>
+
+      <WhySection items={whyData} />
 
       <CTASection
         title="Mejora la conectividad de tu red"
