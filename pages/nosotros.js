@@ -49,12 +49,11 @@ export default function Nosotros() {
           <p>
             Buscamos transformar la experiencia digital de hogares, PyMEs y entornos comerciales,
             respaldada por un servicio profesional y un enfoque personalizado. 
-
           </p>
+        
+          <p>
             Aspiramos a convertirnos en el aliado tecnológico de confianza para nuestros clientes, 
             acompañando su crecimiento a través de infraestructura sólida y escalable.
-          <p>
-            
           </p>
 
         </div>
