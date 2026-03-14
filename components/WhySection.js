@@ -29,7 +29,7 @@ export default function WhySection({ title = "¿Por qué elegirnos?", items }) {
 
           <div
             key={index}
-            className={`feature-card feature-light fade-up fade-delay-${index+1}`}
+            className="feature-card feature-light"
           >
 
             <div className="feature-icon">
