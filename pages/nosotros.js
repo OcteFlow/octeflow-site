@@ -43,17 +43,14 @@ export default function Nosotros() {
 
           <p>
             Ofrecemos soluciones de conectividad inteligente mediante el diseño, implementación y 
-            optimización de redes confiables, seguras y de alto rendimiento, adaptadas a las necesidades de cada cliente.
-          </p>
-
-          <p>
-            Buscamos transformar la experiencia digital de hogares, PyMEs y entornos comerciales,
-            respaldada por un servicio profesional y un enfoque personalizado. 
+            optimización de redes confiables y de alto rendimiento, adaptadas a las necesidades de cada cliente y
+            respaldadas por un servicio profesional y un enfoque personalizado.
           </p>
         
           <p>
             Aspiramos a convertirnos en el aliado tecnológico de confianza para nuestros clientes, 
-            acompañando su crecimiento a través de infraestructura sólida y escalable.
+            transformando la experiencia digital de hogares, PyMEs y entornos comerciales a través de
+            infraestructura sólida y escalable.
           </p>
 
         </div>
