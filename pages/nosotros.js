@@ -42,8 +42,7 @@ export default function Nosotros() {
           </p>
 
           <p>
-            Ofrecemos soluciones de conectividad inteligente mediante el diseño, implementación y 
-            optimización de redes confiables y de alto rendimiento, adaptadas a las necesidades de cada cliente y
+            Ofrecemos soluciones de conectividad confiables y de alto rendimiento, adaptadas a las necesidades de cada cliente y
             respaldadas por un servicio profesional y un enfoque personalizado.
           </p>
         
