@@ -35,6 +35,18 @@ const icons = {
 export default function CatalogSection({ title, items }) {
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const [animate, setAnimate] = useState(true);
+
+  const changeCategory = (index) => {
+    if (index === activeIndex) return;
+
+    setAnimate(false);
+
+    setTimeout(() => {
+      setActiveIndex(index);
+      setAnimate(true);
+    }, 180);
+  };
 
   return (
     <section className="catalog-ultra">
@@ -49,24 +61,30 @@ export default function CatalogSection({ title, items }) {
             <div
               key={i}
               className={`catalog-tab ${i === activeIndex ? "active" : ""}`}
-              onClick={() => setActiveIndex(i)}
+              onClick={() => changeCategory(i)}
             >
               <span className="icon">{icons[cat.category]}</span>
               {cat.category}
+              {i === activeIndex && <span className="active-indicator" />}
             </div>
           ))}
         </div>
 
-        {/* CONTENT */}
-        <div className="catalog-content">
+        {/* CONTENIDO */}
+        <div className={`catalog-content ${animate ? "fade-in" : "fade-out"}`}>
 
-          <h3>{items[activeIndex].category}</h3>
+          <h3 className="catalog-content-title">
+            {items[activeIndex].category}
+          </h3>
 
           <div className="catalog-grid">
 
             {items[activeIndex].items.map((service, i) => (
-
-              <div key={i} className="catalog-card">
+              <div
+                key={i}
+                className="catalog-card"
+                style={{ animationDelay: `${i * 0.05}s` }}
+              >
 
                 <h4>{service.title}</h4>
 
@@ -77,7 +95,6 @@ export default function CatalogSection({ title, items }) {
                 </ul>
 
               </div>
-
             ))}
 
           </div>
