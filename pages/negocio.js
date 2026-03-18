@@ -29,7 +29,7 @@ image="/negocio.jpg"
   />
 
       <CatalogSection
-        title="Soluciones para Negocios"
+        /*title="Soluciones para Negocios"*/
         items={catalogData.negocio}
       />
 
