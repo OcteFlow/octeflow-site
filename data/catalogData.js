@@ -244,4 +244,5 @@ export const catalogData = {
       }
     ]
   }
-];
+]
+};
