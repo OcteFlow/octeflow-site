@@ -45,7 +45,7 @@ export default function CatalogSection({ title, items }) {
     setTimeout(() => {
       setActiveIndex(index);
       setAnimate(true);
-    }, 180);
+    }, 220);
   };
 
   return (
