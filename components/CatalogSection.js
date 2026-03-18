@@ -1,39 +1,43 @@
 export default function CatalogSection({ title, items }) {
 
   return (
-
     <section className="page-section gray">
 
       <h2 className="section-title">{title}</h2>
 
-      <div className="catalog">
+      {items.map((group, index) => (
 
-        {items.map((item, index) => (
+        <div key={index} className="catalog-group">
 
-          <div key={index} className="catalog-block">
+          <h3 className="catalog-category">
+            {group.category}
+          </h3>
 
-            <h3>{item.title}</h3>
+          <div className="catalog">
 
-            {item.description && <p>{item.description}</p>}
+            {group.items.map((item, i) => (
 
-            {item.list && (
+              <div key={i} className="catalog-block premium">
 
-              <ul>
-                {item.list.map((point, i) => (
-                  <li key={i}>{point}</li>
-                ))}
-              </ul>
+                <h4>{item.title}</h4>
 
-            )}
+                <ul>
+                  {item.list.map((point, j) => (
+                    <li key={j}>{point}</li>
+                  ))}
+                </ul>
+
+              </div>
+
+            ))}
 
           </div>
 
-        ))}
+        </div>
 
-      </div>
+      ))}
 
     </section>
-
   );
 
 }
