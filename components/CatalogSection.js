@@ -3,6 +3,16 @@ import { useState, useEffect } from "react";
 export default function CatalogSection({ title, items }) {
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const [animate, setAnimate] = useState(true);
+
+  const changeCategory = (index) => {
+    setAnimate(false);
+
+    setTimeout(() => {
+      setActiveIndex(index);
+      setAnimate(true);
+    }, 150);
+  };
 
   useEffect(() => {
     const cards = document.querySelectorAll(".catalog-card-ultra");
@@ -32,15 +42,16 @@ export default function CatalogSection({ title, items }) {
             <div
               key={i}
               className={`catalog-tab ${i === activeIndex ? "active" : ""}`}
-              onClick={() => setActiveIndex(i)}
+              onClick={() => changeCategory(i)}
             >
               {cat.category}
+              {i === activeIndex && <span className="active-indicator" />}
             </div>
           ))}
         </div>
 
         {/* CONTENIDO */}
-        <div className="catalog-content">
+        <div className={`catalog-content ${animate ? "fade-in" : "fade-out"}`}>
 
           <h3 className="catalog-content-title">
             {items[activeIndex].category}
@@ -50,7 +61,11 @@ export default function CatalogSection({ title, items }) {
 
             {items[activeIndex].items.map((service, i) => (
 
-              <div key={i} className="catalog-card-ultra">
+              <div
+                key={i}
+                className="catalog-card-ultra"
+                style={{ animationDelay: `${i * 0.08}s` }}
+              >
 
                 <h4>{service.title}</h4>
 
