@@ -51,7 +51,7 @@ export default function CatalogSection({ title, items }) {
   return (
     <section className="catalog-ultra">
 
-      <h2 className="section-title">{title}</h2>
+      {title && <h2 className="section-title">{title}</h2>}
 
       <div className="catalog-ultra-container">
 
