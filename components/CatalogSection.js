@@ -1,28 +1,61 @@
+import { useState, useEffect } from "react";
+
 export default function CatalogSection({ title, items }) {
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const cards = document.querySelectorAll(".catalog-card-ultra");
+
+    cards.forEach(card => {
+      card.addEventListener("mousemove", e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        card.style.setProperty("--x", `${x}px`);
+        card.style.setProperty("--y", `${y}px`);
+      });
+    });
+  }, [activeIndex]);
+
   return (
-    <section className="page-section gray">
+    <section className="catalog-ultra">
 
       <h2 className="section-title">{title}</h2>
 
-      {items.map((group, index) => (
+      <div className="catalog-ultra-container">
 
-        <div key={index} className="catalog-group">
+        {/* SIDEBAR */}
+        <div className="catalog-sidebar">
+          {items.map((cat, i) => (
+            <div
+              key={i}
+              className={`catalog-tab ${i === activeIndex ? "active" : ""}`}
+              onClick={() => setActiveIndex(i)}
+            >
+              {cat.category}
+            </div>
+          ))}
+        </div>
 
-          <h3 className="catalog-category">
-            {group.category}
+        {/* CONTENIDO */}
+        <div className="catalog-content">
+
+          <h3 className="catalog-content-title">
+            {items[activeIndex].category}
           </h3>
 
-          <div className="catalog">
+          <div className="catalog-ultra-grid">
 
-            {group.items.map((item, i) => (
+            {items[activeIndex].items.map((service, i) => (
 
-              <div key={i} className="catalog-block premium">
+              <div key={i} className="catalog-card-ultra">
 
-                <h4>{item.title}</h4>
+                <h4>{service.title}</h4>
 
                 <ul>
-                  {item.list.map((point, j) => (
+                  {service.list.map((point, j) => (
                     <li key={j}>{point}</li>
                   ))}
                 </ul>
@@ -35,9 +68,8 @@ export default function CatalogSection({ title, items }) {
 
         </div>
 
-      ))}
+      </div>
 
     </section>
   );
-
 }
