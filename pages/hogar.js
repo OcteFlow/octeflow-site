@@ -29,7 +29,7 @@ image="/hogar.jpg"
   />
 
       <CatalogSection
-        title="Soluciones para tu Hogar"
+        /*title="Soluciones para tu Hogar"*/
         items={catalogData.hogar}
       />
 
