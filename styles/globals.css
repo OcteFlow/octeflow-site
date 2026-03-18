@@ -1750,3 +1750,12 @@ white-space:nowrap;
 }
 
 }
+
+.icon svg {
+  color: #2ea5e4;
+  transition: 0.3s;
+}
+
+.catalog-tab:hover .icon svg {
+  transform: scale(1.1);
+}
