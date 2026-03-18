@@ -1759,3 +1759,18 @@ white-space:nowrap;
 .catalog-tab:hover .icon svg {
   transform: scale(1.1);
 }
+
+
+.catalog-content{
+transition:all .35s ease;
+}
+
+.fade-out{
+opacity:0;
+transform:translateY(15px);
+}
+
+.fade-in{
+opacity:1;
+transform:translateY(0);
+}
