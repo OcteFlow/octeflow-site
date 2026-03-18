@@ -29,7 +29,7 @@ image="/pyme.jpg"
   />
 
       <CatalogSection
-        title="Servicios para PyME"
+        /*title="Servicios para PyME"*/
         items={catalogData.pyme}
       />
 
