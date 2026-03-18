@@ -1765,3 +1765,87 @@ white-space:nowrap;
 }
 
 }
+
+
+/* TRANSICIONES DE CONTENIDO */
+
+.catalog-content{
+transition:all .35s ease;
+}
+
+.fade-out{
+opacity:0;
+transform:translateY(20px);
+}
+
+.fade-in{
+opacity:1;
+transform:translateY(0);
+}
+
+/* ANIMACION DE CARDS */
+
+.catalog-card-ultra{
+opacity:0;
+transform:translateY(30px);
+animation:cardEntry .6s ease forwards;
+}
+
+@keyframes cardEntry{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* SIDEBAR MEJORADO */
+
+.catalog-tab{
+position:relative;
+padding:14px 18px;
+border-radius:10px;
+cursor:pointer;
+font-weight:500;
+color:#555;
+transition:.3s;
+overflow:hidden;
+}
+
+/* indicador activo tipo barra lateral */
+.active-indicator{
+position:absolute;
+left:0;
+top:0;
+height:100%;
+width:4px;
+background:#2ea5e4;
+border-radius:2px;
+}
+
+/* hover más elegante */
+.catalog-tab:hover{
+background:#f2f7ff;
+color:#2ea5e4;
+}
+
+/* activo más fino */
+.catalog-tab.active{
+background:#eaf3ff;
+color:#2ea5e4;
+font-weight:600;
+}
+
+/* TITULO MÁS PREMIUM */
+
+.catalog-content-title{
+font-size:26px;
+font-weight:700;
+margin-bottom:30px;
+color:#050a30;
+}
+
+/* MEJOR ESPACIADO GENERAL */
+
+.catalog-ultra{
+padding:130px 20px;
+}
