@@ -1,33 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+
+const icons = {
+  "Redes Empresariales": "🌐",
+  "CCTV y Videovigilancia": "📹",
+  "Redes para Negocio": "🏪",
+  "Redes en el Hogar": "🏠",
+  "Hogar Inteligente": "🤖"
+};
 
 export default function CatalogSection({ title, items }) {
 
   const [activeIndex, setActiveIndex] = useState(0);
-  const [animate, setAnimate] = useState(true);
-
-  const changeCategory = (index) => {
-    setAnimate(false);
-
-    setTimeout(() => {
-      setActiveIndex(index);
-      setAnimate(true);
-    }, 150);
-  };
-
-  useEffect(() => {
-    const cards = document.querySelectorAll(".catalog-card-ultra");
-
-    cards.forEach(card => {
-      card.addEventListener("mousemove", e => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-
-        card.style.setProperty("--x", `${x}px`);
-        card.style.setProperty("--y", `${y}px`);
-      });
-    });
-  }, [activeIndex]);
 
   return (
     <section className="catalog-ultra">
@@ -42,30 +25,24 @@ export default function CatalogSection({ title, items }) {
             <div
               key={i}
               className={`catalog-tab ${i === activeIndex ? "active" : ""}`}
-              onClick={() => changeCategory(i)}
+              onClick={() => setActiveIndex(i)}
             >
+              <span className="icon">{icons[cat.category]}</span>
               {cat.category}
-              {i === activeIndex && <span className="active-indicator" />}
             </div>
           ))}
         </div>
 
-        {/* CONTENIDO */}
-        <div className={`catalog-content ${animate ? "fade-in" : "fade-out"}`}>
+        {/* CONTENT */}
+        <div className="catalog-content">
 
-          <h3 className="catalog-content-title">
-            {items[activeIndex].category}
-          </h3>
+          <h3>{items[activeIndex].category}</h3>
 
-          <div className="catalog-ultra-grid">
+          <div className="catalog-grid">
 
             {items[activeIndex].items.map((service, i) => (
 
-              <div
-                key={i}
-                className="catalog-card-ultra"
-                style={{ animationDelay: `${i * 0.08}s` }}
-              >
+              <div key={i} className="catalog-card">
 
                 <h4>{service.title}</h4>
 
