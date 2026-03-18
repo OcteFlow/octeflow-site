@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import BrandsSection from "../components/BrandsSection";
+import WhySection from "../components/WhySection";
+import { whyData } from "../data/whyData";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -397,68 +399,10 @@ style={{width:"420px"}}
 <BrandsSection showTitle={true} />
 
 {/* POR QUE ELEGIRNOS */}
-<div style={{
-  background:"#f5f7fb",
-  padding:"90px 20px",
-  textAlign:"center"
-}}>
-
-<h2 className="section-title" style={{
-  color:"#050a30",
-  fontSize:"32px",
-  marginBottom:"60px"
-}}>
-Por qué elegirnos
-</h2>
-
-<div style={{
-  display:"flex",
-  justifyContent:"center",
-  gap:"40px",
-  flexWrap:"wrap",
-  maxWidth:"1100px",
-  margin:"0 auto"
-}}>
-
-<div className="feature-card feature-light fade-up fade-delay-1">
-
-<div className="feature-icon">⚡</div>
-
-<h3>Instalación rápida</h3>
-
-<p>
-Implementamos tu red y equipos de forma eficiente para que tu operación no se detenga.
-</p>
-
-</div>
-
-<div className="feature-card feature-light fade-up fade-delay-2">
-
-<div className="feature-icon">🔒</div>
-
-<h3>Seguridad profesional</h3>
-
-<p>
-Protege tu empresa con redes seguras, cámaras y monitoreo confiable.
-</p>
-
-</div>
-
-<div className="feature-card feature-light fade-up fade-delay-3">
-
-<div className="feature-icon">📡</div>
-
-<h3>WiFi optimizado</h3>
-
-<p>
-Diseñamos cobertura inalámbrica estable para oficinas, comercios y hogares.
-</p>
-
-</div>
-
-</div>
-
-</div>
+<WhySection
+title="¿Por qué elegirnos?"
+items={whyData}
+/>
 
 {/* SOLUCION EN 3 PASOS */}
 
