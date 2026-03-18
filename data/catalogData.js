@@ -69,7 +69,7 @@ export const catalogData = {
       ]
     }
   ]
-};
+},
 
   negocio: [
     {
