@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useEffect } from "react";
 import HeaderPages from "../components/HeaderPages";
 import Footer from "../components/Footer";
 import WhySection from "../components/WhySection";
@@ -7,6 +8,43 @@ import CTASection from "../components/CTASection";
 import BannerPage from "../components/BannerPage";
 
 export default function Nosotros() {
+
+  useEffect(() => {
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll(".fade-up");
+
+  hiddenElements.forEach((el) => observer.observe(el));
+
+  // efecto hover luz en tarjetas
+  const cards = document.querySelectorAll(".feature-light");
+
+  cards.forEach((card) => {
+    card.addEventListener("mousemove", (e) => {
+
+      const rect = card.getBoundingClientRect();
+
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      card.style.setProperty("--x", `${x}px`);
+      card.style.setProperty("--y", `${y}px`);
+
+    });
+  });
+
+}, []);
 
   return (
 
