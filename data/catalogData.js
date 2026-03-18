@@ -68,8 +68,7 @@ export const catalogData = {
         }
       ]
     }
-  ]
-},
+  ],   // 👈 AQUÍ SOLO VA COMA, NO CIERRES EL OBJETO
 
   negocio: [
     {
@@ -80,7 +79,6 @@ export const catalogData = {
         "Control de acceso"
       ]
     },
-
     {
       title: "Red interna para operaciones",
       list: [
@@ -89,7 +87,6 @@ export const catalogData = {
         "Red segura para empleados"
       ]
     },
-
     {
       title: "Videovigilancia CCTV",
       list: [
@@ -100,7 +97,6 @@ export const catalogData = {
     }
   ],
 
-
   hogar: [
     {
       title: "WiFi en toda la casa",
@@ -110,7 +106,6 @@ export const catalogData = {
         "Configuración de sistemas Mesh"
       ]
     },
-
     {
       title: "Optimización de red doméstica",
       list: [
@@ -119,7 +114,6 @@ export const catalogData = {
         "Red estable para streaming y gaming"
       ]
     },
-
     {
       title: "Seguridad con cámaras",
       list: [
