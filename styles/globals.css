@@ -1544,3 +1544,90 @@ color:#333;
     grid-template-columns: 1fr;
   }
 }
+
+
+/* CONTENEDOR POR CATEGORIA */
+.catalog-group{
+margin-bottom:80px;
+}
+
+/* TITULO DE CATEGORIA */
+.catalog-category{
+color:#050a30;
+font-size:26px;
+margin-bottom:30px;
+text-align:left;
+max-width:1300px;
+margin-left:auto;
+margin-right:auto;
+}
+
+/* GRID */
+.catalog{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+max-width:1300px;
+margin:auto;
+}
+
+/* TARJETAS PREMIUM */
+.catalog-block.premium{
+background:linear-gradient(
+145deg,
+#0f172a,
+#020617
+);
+color:white;
+padding:30px;
+border-radius:14px;
+border:1px solid rgba(46,165,228,0.2);
+
+transition:all .3s ease;
+
+position:relative;
+overflow:hidden;
+}
+
+/* glow sutil */
+.catalog-block.premium::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:radial-gradient(
+circle at top left,
+rgba(46,165,228,0.25),
+transparent 60%
+);
+opacity:0;
+transition:.3s;
+}
+
+.catalog-block.premium:hover::before{
+opacity:1;
+}
+
+/* hover */
+.catalog-block.premium:hover{
+transform:translateY(-6px);
+box-shadow:
+0 15px 40px rgba(0,0,0,0.5),
+0 0 25px rgba(46,165,228,0.3);
+}
+
+/* TITULO */
+.catalog-block.premium h4{
+margin-bottom:15px;
+font-size:18px;
+color:#2ea5e4;
+}
+
+/* LISTA */
+.catalog-block.premium li{
+margin-bottom:8px;
+color:#cbd5e1;
+font-size:14px;
+}
