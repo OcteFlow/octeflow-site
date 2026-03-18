@@ -408,7 +408,7 @@ items={whyData}
 
 <div className="steps-section">
 
-<h2 className="section-title">Soluciones para tu empresa en 3 pasos</h2>
+<h2 className="section-title">Soluciones para ti en 3 pasos</h2>
 
 <div className="steps-container">
 
