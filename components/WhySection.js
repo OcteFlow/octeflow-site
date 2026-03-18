@@ -16,14 +16,7 @@ export default function WhySection({ title = "¿Por qué elegirnos?", items }) {
         {title}
       </h2>
 
-      <div style={{
-        display:"flex",
-        justifyContent:"center",
-        gap:"40px",
-        flexWrap:"wrap",
-        maxWidth:"1100px",
-        margin:"0 auto"
-      }}>
+      <div className="why-container">
 
         {items.map((item, index) => (
 
