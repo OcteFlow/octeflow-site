@@ -1774,3 +1774,20 @@ transform:translateY(15px);
 opacity:1;
 transform:translateY(0);
 }
+
+.catalog-card{
+transition:
+transform .4s cubic-bezier(.22,1,.36,1),
+box-shadow .4s ease,
+border .3s ease;
+}
+
+.catalog-card:hover{
+transform:translateY(-10px) scale(1.03);
+
+box-shadow:
+0 25px 70px rgba(0,0,0,0.18),
+0 0 40px rgba(46,165,228,0.25);
+
+border:1px solid rgba(46,165,228,0.3);
+}
