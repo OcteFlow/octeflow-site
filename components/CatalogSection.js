@@ -109,7 +109,23 @@ const sectionRef = useRef(null);
             {items[activeIndex].items.map((service, i) => (
               <div
   key={i}
-  className={`catalog-card ${animate ? "card-show" : ""}`}
+  className="catalog-card"
+ref={(el) => {
+  if (!el) return;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        el.classList.add("card-show");
+      } else {
+        el.classList.remove("card-show");
+      }
+    },
+    { threshold: 0.2 }
+  );
+
+  observer.observe(el);
+}}
   style={{ transitionDelay: `${i * 0.08}s` }}
 >
 
