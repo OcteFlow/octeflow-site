@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const icons = {
   "Redes Empresariales": (
@@ -34,8 +34,35 @@ const icons = {
 
 export default function CatalogSection({ title, items }) {
 
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animate, setAnimate] = useState(true);
+const [activeIndex, setActiveIndex] = useState(0);
+const [animate, setAnimate] = useState(false);
+
+const sectionRef = useRef(null);
+
+  useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setAnimate(true);
+      } else {
+        setAnimate(false); // 🔥 esto hace que se repita
+      }
+    },
+    {
+      threshold: 0.3, // se activa cuando 30% es visible
+    }
+  );
+
+  if (sectionRef.current) {
+    observer.observe(sectionRef.current);
+  }
+
+  return () => {
+    if (sectionRef.current) {
+      observer.unobserve(sectionRef.current);
+    }
+  };
+}, []);
 
   const changeCategory = (index) => {
     if (index === activeIndex) return;
@@ -49,7 +76,7 @@ export default function CatalogSection({ title, items }) {
   };
 
   return (
-    <section className="catalog-ultra fade-up">
+    <section ref={sectionRef} className="catalog-ultra">
 
       {title && <h2 className="section-title">{title}</h2>}
 
@@ -81,10 +108,10 @@ export default function CatalogSection({ title, items }) {
 
             {items[activeIndex].items.map((service, i) => (
               <div
-                key={i}
-                className="catalog-card fade-up"
-                style={{ animationDelay: `${i * 0.05}s` }}
-              >
+  key={i}
+  className={`catalog-card ${animate ? "card-show" : ""}`}
+  style={{ transitionDelay: `${i * 0.08}s` }}
+>
 
                 <h4>{service.title}</h4>
 
