@@ -49,7 +49,7 @@ export default function CatalogSection({ title, items }) {
   };
 
   return (
-    <section className="catalog-ultra">
+    <section className="catalog-ultra fade-up">
 
       {title && <h2 className="section-title">{title}</h2>}
 
@@ -82,7 +82,7 @@ export default function CatalogSection({ title, items }) {
             {items[activeIndex].items.map((service, i) => (
               <div
                 key={i}
-                className="catalog-card"
+                className="catalog-card fade-up"
                 style={{ animationDelay: `${i * 0.05}s` }}
               >
 
