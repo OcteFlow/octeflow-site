@@ -7,10 +7,6 @@ export default function ProcessSection() {
         Cómo trabajamos
       </h2>
 
-      <p className="process-subtitle">
-        Nuestro enfoque garantiza redes confiables, escalables y bien diseñadas.
-      </p>
-
       <div className="process-grid">
 
         <div className="process-card">
