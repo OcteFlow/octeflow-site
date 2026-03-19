@@ -1290,13 +1290,13 @@ flex-wrap:wrap;
 /* PROCESS SECTION */
 
 .process-section{
+  padding:120px 20px;
+  background: transparent;
+  text-align:center;
+}
 
-padding:100px 20px;
-
-background:#f8fafc;
-
-text-align:center;
-
+.process-section .section-title{
+  color: white;
 }
 
 .process-grid{
