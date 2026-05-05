@@ -38,11 +38,11 @@ return (
 
 <h4>Contacto</h4>
 
-<p>📞 +52 442 139 6305</p>
+<p>📞 +52 442 717 3295</p>
 <p>✉ contacto@octeflow.com</p>
 
 <a
-href="https://wa.me/5214421396305"
+href="https://wa.me/5214427173295"
 target="_blank"
 rel="noopener noreferrer"
 className="contact-btn footer-btn"
