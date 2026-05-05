@@ -16,7 +16,7 @@ export default function BannerPage({ title, subtitle, image }) {
         <div className="hero-buttons">
 
           <a
-            href="https://wa.me/5214421396305"
+            href="https://wa.me/5214427173295"
             target="_blank"
             rel="noopener noreferrer"
             className="btn"
@@ -25,7 +25,7 @@ export default function BannerPage({ title, subtitle, image }) {
           </a>
 
           <a
-            href="tel:+524421396305"
+            href="tel:+524427173295"
             className="btn outline"
           >
             Llamar
