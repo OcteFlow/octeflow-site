@@ -199,11 +199,11 @@ counters.forEach(counter => counterObserver.observe(counter));
               <p>{slides[current].subtitle}</p>
 
               <div className="hero-buttons">
-                <a href="https://wa.me/524421396305" className="btn">
+                <a href="https://wa.me/5214427173295" className="btn">
                   WhatsApp
                 </a>
 
-                <a href="tel:+524421396305" className="btn outline">
+                <a href="tel:+524427173295" className="btn outline">
                   Llamar
                 </a>
               </div>
@@ -473,7 +473,7 @@ Contáctanos y descubre cómo mejorar la conectividad de tu empresa, negocio u h
   <div className="contact-buttons">
 
 <a
-href="https://wa.me/5214421396305"
+href="https://wa.me/5214427173295"
 target="_blank"
 rel="noopener noreferrer"
 className="contact-btn"
@@ -499,7 +499,7 @@ Correo
 </a>
 
 <a
-href="tel:+5214421396305"
+href="tel:+524427173295"
 className="contact-btn"
 >
 <span className="contact-icon">📞</span>
@@ -510,7 +510,7 @@ Llamar
 </div>
 
 <a
-href="https://wa.me/5214421396305"
+href="https://wa.me/5214427173295"
 target="_blank"
 rel="noopener noreferrer"
 className="whatsapp-float"
@@ -561,11 +561,11 @@ height="30"
 
 <h4>Contacto</h4>
 
-<p>📞 +52 442 139 6305</p>
+<p>📞 +52 442 717 3295</p>
 <p>✉ contacto@octeflow.com</p>
 
 <a
-href="https://wa.me/5214421396305"
+href="https://wa.me/5214427173295"
 target="_blank"
 rel="noopener noreferrer"
 className="contact-btn footer-btn"
